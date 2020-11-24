@@ -1,0 +1,767 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F1455 ]
+[d frameptr 6 ]
+"30 D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_LDR/src/i2c_master.h
+[e E365 . `uc
+SENO 0
+COSENO 1
+QUIETO 2
+]
+"96 D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_LDR/src/i2c_master.c
+[e E2558 . `uc
+I2C_IDLE 0
+I2C_SEND_ADR_READ 1
+I2C_SEND_ADR_WRITE 2
+I2C_TX 3
+I2C_RX 4
+I2C_RCEN 5
+I2C_TX_EMPTY 6
+I2C_SEND_RESTART_READ 7
+I2C_SEND_RESTART_WRITE 8
+I2C_SEND_RESTART 9
+I2C_SEND_STOP 10
+I2C_RX_ACK 11
+I2C_RX_NACK_STOP 12
+I2C_RX_NACK_RESTART 13
+I2C_RESET 14
+I2C_ADDRESS_NACK 15
+]
+"115
+[e E358 . `uc
+I2C_STOP 1
+I2C_RESTART_READ 2
+I2C_RESTART_WRITE 3
+I2C_CONTINUE 4
+I2C_RESET_LINK 5
+]
+[e E353 . `uc
+I2C_NOERR 0
+I2C_BUSY 1
+I2C_FAIL 2
+]
+"141
+[e E2576 . `uc
+I2C_DATA_COMPLETE 0
+I2C_WRITE_COLLISION 1
+I2C_ADDR_NACK 2
+I2C_DATA_NACK 3
+I2C_TIMEOUT 4
+I2C_NULL 5
+]
+"30 D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_LDR/src/i2c_master.h
+[e E365 . `uc
+SENO 0
+COSENO 1
+QUIETO 2
+]
+"17 D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_LDR/src/i2c_master_functions.c
+[e E353 . `uc
+I2C_NOERR 0
+I2C_BUSY 1
+I2C_FAIL 2
+]
+"18
+[e E358 . `uc
+I2C_STOP 1
+I2C_RESTART_READ 2
+I2C_RESTART_WRITE 3
+I2C_CONTINUE 4
+I2C_RESET_LINK 5
+]
+"30 D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_LDR/src/i2c_master.h
+[e E2526 . `uc
+SENO 0
+COSENO 1
+QUIETO 2
+]
+[e E2526 . `uc
+SENO 0
+COSENO 1
+QUIETO 2
+]
+[e E2526 . `uc
+SENO 0
+COSENO 1
+QUIETO 2
+]
+[e E2521 . `uc
+SENO 0
+COSENO 1
+QUIETO 2
+]
+"117 D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_LDR/src/i2c_master.c
+[v _I2C_Initialize I2C_Initialize `(v  1 e 1 0 ]
+"126
+[v _I2C_Open I2C_Open `(E353  1 e 1 0 ]
+"159
+[v _I2C_Close I2C_Close `(E353  1 e 1 0 ]
+"174
+[v _I2C_MasterOperation I2C_MasterOperation `(E353  1 e 1 0 ]
+"198
+[v _I2C_MasterWrite I2C_MasterWrite `(E353  1 e 1 0 ]
+"203
+[v _I2C_SetBuffer I2C_SetBuffer `(v  1 e 1 0 ]
+"213
+[v _I2C_SetDataCompleteCallback I2C_SetDataCompleteCallback `(v  1 e 1 0 ]
+"218
+[v _I2C_SetAddressNackCallback I2C_SetAddressNackCallback `(v  1 e 1 0 ]
+"223
+[v _I2C_SetCallback I2C_SetCallback `(v  1 s 1 I2C_SetCallback ]
+"237
+[v _I2C_Poller I2C_Poller `(v  1 s 1 I2C_Poller ]
+"246
+[v _I2C_MasterFsm I2C_MasterFsm `T(v  1 s 1 I2C_MasterFsm ]
+"258
+[v _I2C_DO_IDLE I2C_DO_IDLE `(E2558  1 s 1 I2C_DO_IDLE ]
+"265
+[v _I2C_DO_SEND_ADR_READ I2C_DO_SEND_ADR_READ `(E2558  1 s 1 I2C_DO_SEND_ADR_READ ]
+"272
+[v _I2C_DO_SEND_ADR_WRITE I2C_DO_SEND_ADR_WRITE `(E2558  1 s 1 I2C_DO_SEND_ADR_WRITE ]
+"279
+[v _I2C_DO_TX I2C_DO_TX `(E2558  1 s 1 I2C_DO_TX ]
+"303
+[v _I2C_DO_RX I2C_DO_RX `(E2558  1 s 1 I2C_DO_RX ]
+"327
+[v _I2C_DO_RCEN I2C_DO_RCEN `(E2558  1 s 1 I2C_DO_RCEN ]
+"334
+[v _I2C_DO_TX_EMPTY I2C_DO_TX_EMPTY `(E2558  1 s 1 I2C_DO_TX_EMPTY ]
+"351
+[v _I2C_DO_SEND_RESTART_READ I2C_DO_SEND_RESTART_READ `(E2558  1 s 1 I2C_DO_SEND_RESTART_READ ]
+"357
+[v _I2C_DO_SEND_RESTART_WRITE I2C_DO_SEND_RESTART_WRITE `(E2558  1 s 1 I2C_DO_SEND_RESTART_WRITE ]
+"364
+[v _I2C_DO_SEND_RESTART I2C_DO_SEND_RESTART `(E2558  1 s 1 I2C_DO_SEND_RESTART ]
+"370
+[v _I2C_DO_SEND_STOP I2C_DO_SEND_STOP `(E2558  1 s 1 I2C_DO_SEND_STOP ]
+"376
+[v _I2C_DO_RX_ACK I2C_DO_RX_ACK `(E2558  1 s 1 I2C_DO_RX_ACK ]
+"383
+[v _I2C_DO_RX_NACK_STOP I2C_DO_RX_NACK_STOP `(E2558  1 s 1 I2C_DO_RX_NACK_STOP ]
+"389
+[v _I2C_DO_RX_NACK_RESTART I2C_DO_RX_NACK_RESTART `(E2558  1 s 1 I2C_DO_RX_NACK_RESTART ]
+"395
+[v _I2C_DO_RESET I2C_DO_RESET `(E2558  1 s 1 I2C_DO_RESET ]
+"401
+[v _I2C_DO_ADDRESS_NACK I2C_DO_ADDRESS_NACK `(E2558  1 s 1 I2C_DO_ADDRESS_NACK ]
+"416
+[v _I2C_CallbackReturnStop I2C_CallbackReturnStop `(E358  1 e 1 0 ]
+"421
+[v _I2C_CallbackReturnReset I2C_CallbackReturnReset `(E358  1 e 1 0 ]
+"427
+[v _I2C_MasterOpen I2C_MasterOpen `T(a  1 s 1 I2C_MasterOpen ]
+"441
+[v _I2C_MasterClose I2C_MasterClose `T(v  1 s 1 I2C_MasterClose ]
+"447
+[v _I2C_MasterGetRxData I2C_MasterGetRxData `T(uc  1 s 1 I2C_MasterGetRxData ]
+"452
+[v _I2C_MasterSendTxData I2C_MasterSendTxData `T(v  1 s 1 I2C_MasterSendTxData ]
+"457
+[v _I2C_MasterEnableRestart I2C_MasterEnableRestart `T(v  1 s 1 I2C_MasterEnableRestart ]
+"462
+[v _I2C_MasterStartRx I2C_MasterStartRx `T(v  1 s 1 I2C_MasterStartRx ]
+"467
+[v _I2C_MasterStart I2C_MasterStart `T(v  1 s 1 I2C_MasterStart ]
+"472
+[v _I2C_MasterStop I2C_MasterStop `T(v  1 s 1 I2C_MasterStop ]
+"477
+[v _I2C_MasterIsNack I2C_MasterIsNack `T(a  1 s 1 I2C_MasterIsNack ]
+"482
+[v _I2C_MasterSendAck I2C_MasterSendAck `T(v  1 s 1 I2C_MasterSendAck ]
+"488
+[v _I2C_MasterSendNack I2C_MasterSendNack `T(v  1 s 1 I2C_MasterSendNack ]
+"494
+[v _I2C_MasterDisableIrq I2C_MasterDisableIrq `T(v  1 s 1 I2C_MasterDisableIrq ]
+"499
+[v _I2C_MasterClearIrq I2C_MasterClearIrq `T(v  1 s 1 I2C_MasterClearIrq ]
+"504
+[v _I2C_MasterSetIrq I2C_MasterSetIrq `T(v  1 s 1 I2C_MasterSetIrq ]
+"509
+[v _I2C_MasterWaitForEvent I2C_MasterWaitForEvent `T(v  1 s 1 I2C_MasterWaitForEvent ]
+"13 D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_LDR/src/i2c_master_functions.c
+[v _I2C_Read1ByteRegister I2C_Read1ByteRegister `(uc  1 e 1 0 ]
+"27
+[v _I2C_Write1ByteRegister I2C_Write1ByteRegister `(v  1 e 1 0 ]
+"37
+[v _rd1RegCompleteHandler rd1RegCompleteHandler `(E358  1 s 1 rd1RegCompleteHandler ]
+"44
+[v _wr1RegCompleteHandler wr1RegCompleteHandler `(E358  1 s 1 wr1RegCompleteHandler ]
+"4 D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_LDR/src/init.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+"14
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+"26
+[v _WDT_Initialize WDT_Initialize `(v  1 e 1 0 ]
+"4 D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_LDR/src/interrupt_manager.c
+[v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `II(v  1 e 1 0 ]
+"15 D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_LDR/src/main.c
+[v _main main `(v  1 e 1 0 ]
+"4 D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_LDR/src/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+"8 D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_LDR/src/tmr1.c
+[v _TMR1_Initialize TMR1_Initialize `(v  1 e 1 0 ]
+"36
+[v _TMR1_WriteTimer TMR1_WriteTimer `(v  1 e 1 0 ]
+"58
+[v _TMR1_ISR TMR1_ISR `(v  1 e 1 0 ]
+"72
+[v _TMR1_SetInterruptHandler TMR1_SetInterruptHandler `(v  1 e 1 0 ]
+"7 D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_LDR/src/vertebra_master_ldr.c
+[v _TMR1_Master_InterruptHandler TMR1_Master_InterruptHandler `(v  1 e 1 0 ]
+"11
+[v _Get_Master_TMR1_flag Get_Master_TMR1_flag `(uc  1 e 1 0 ]
+"15
+[v _Clear_Master_TMR1_flag Clear_Master_TMR1_flag `(v  1 e 1 0 ]
+"18
+[v _Read_Slave_Sensors Read_Slave_Sensors `(v  1 e 1 0 ]
+"50
+[v _Read_All_Slave_Sensors Read_All_Slave_Sensors `(v  1 e 1 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"96 D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_LDR/src/i2c_master.c
+[v _i2c_fsmStateTable i2c_fsmStateTable `DC[16]*.37(E2558  1 e 32 0 ]
+[s S120 . 29 `[6]*.37(E358 1 callbackTable 12 0 `[6]*.4v 1 callbackPayload 6 12 `us 1 time_out 2 18 `us 1 time_out_value 2 20 `uc 1 address 1 22 `*.4uc 1 data_ptr 1 23 `ui 1 data_length 2 24 `E2558 1 state 1 26 `E353 1 error 1 27 `uc 1 addressNackCheck 1 28 :1:0 
+`uc 1 busy 1 28 :1:1 
+`uc 1 inUse 1 28 :1:2 
+`uc 1 bufferFree 1 28 :1:3 
+]
+"115
+[v _I2C_Status I2C_Status `S120  1 e 29 0 ]
+"5 D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_LDR/src/tmr1.c
+[v _timer1ReloadVal timer1ReloadVal `VEus  1 e 2 0 ]
+"6
+[v _TMR1_InterruptHandler TMR1_InterruptHandler `*.37(v  1 e 2 0 ]
+"5 D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_LDR/src/vertebra_master_ldr.c
+[v _flag flag `uc  1 s 1 flag ]
+[s S607 . 1 `uc 1 IOCIF 1 0 :1:0 
+`uc 1 INTF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 IOCIE 1 0 :1:3 
+`uc 1 INTE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"374 C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f1455.h
+[s S616 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 T0IE 1 0 :1:5 
+]
+[u S621 . 1 `S607 1 . 1 0 `S616 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES621  1 e 1 @11 ]
+[s S338 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 SSP1IF 1 0 :1:3 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+`uc 1 ADIF 1 0 :1:6 
+`uc 1 TMR1GIF 1 0 :1:7 
+]
+"541
+[u S347 . 1 `S338 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES347  1 e 1 @17 ]
+"660
+[v _TMR1L TMR1L `VEuc  1 e 1 @22 ]
+"680
+[v _TMR1H TMR1H `VEuc  1 e 1 @23 ]
+"700
+[v _T1CON T1CON `VEuc  1 e 1 @24 ]
+[s S819 . 1 `uc 1 TMR1ON 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 nT1SYNC 1 0 :1:2 
+`uc 1 T1OSCEN 1 0 :1:3 
+`uc 1 T1CKPS 1 0 :2:4 
+`uc 1 TMR1CS 1 0 :2:6 
+]
+"722
+[s S826 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 T1CKPS0 1 0 :1:4 
+`uc 1 T1CKPS1 1 0 :1:5 
+`uc 1 TMR1CS0 1 0 :1:6 
+`uc 1 TMR1CS1 1 0 :1:7 
+]
+[u S832 . 1 `S819 1 . 1 0 `S826 1 . 1 0 ]
+[v _T1CONbits T1CONbits `VES832  1 e 1 @24 ]
+"772
+[v _T1GCON T1GCON `VEuc  1 e 1 @25 ]
+"953
+[v _TRISA TRISA `VEuc  1 e 1 @140 ]
+"980
+[v _TRISC TRISC `VEuc  1 e 1 @142 ]
+[s S317 . 1 `uc 1 TMR1IE 1 0 :1:0 
+`uc 1 TMR2IE 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 SSP1IE 1 0 :1:3 
+`uc 1 TXIE 1 0 :1:4 
+`uc 1 RCIE 1 0 :1:5 
+`uc 1 ADIE 1 0 :1:6 
+`uc 1 TMR1GIE 1 0 :1:7 
+]
+"1047
+[u S326 . 1 `S317 1 . 1 0 ]
+[v _PIE1bits PIE1bits `VES326  1 e 1 @145 ]
+[s S740 . 1 `uc 1 PS 1 0 :3:0 
+`uc 1 PSA 1 0 :1:3 
+`uc 1 TMR0SE 1 0 :1:4 
+`uc 1 TMR0CS 1 0 :1:5 
+`uc 1 INTEDG 1 0 :1:6 
+`uc 1 nWPUEN 1 0 :1:7 
+]
+"1162
+[s S747 . 1 `uc 1 PS0 1 0 :1:0 
+`uc 1 PS1 1 0 :1:1 
+`uc 1 PS2 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 T0SE 1 0 :1:4 
+`uc 1 T0CS 1 0 :1:5 
+]
+[u S754 . 1 `S740 1 . 1 0 `S747 1 . 1 0 ]
+[v _OPTION_REGbits OPTION_REGbits `VES754  1 e 1 @149 ]
+"1279
+[v _WDTCON WDTCON `VEuc  1 e 1 @151 ]
+"1338
+[v _OSCTUNE OSCTUNE `VEuc  1 e 1 @152 ]
+"1402
+[v _OSCCON OSCCON `VEuc  1 e 1 @153 ]
+"1764
+[v _LATA LATA `VEuc  1 e 1 @268 ]
+"1791
+[v _LATC LATC `VEuc  1 e 1 @270 ]
+"2125
+[v _BORCON BORCON `VEuc  1 e 1 @278 ]
+"2341
+[v _APFCON APFCON `VEuc  1 e 1 @285 ]
+"2387
+[v _ANSELA ANSELA `VEuc  1 e 1 @396 ]
+"2416
+[v _ANSELC ANSELC `VEuc  1 e 1 @398 ]
+"2929
+[v _WPUA WPUA `VEuc  1 e 1 @524 ]
+"2970
+[v _SSP1BUF SSP1BUF `VEuc  1 e 1 @529 ]
+"3008
+[v _SSP1ADD SSP1ADD `VEuc  1 e 1 @530 ]
+"3084
+[v _SSP1STAT SSP1STAT `VEuc  1 e 1 @532 ]
+"3206
+[v _SSP1CON1 SSP1CON1 `VEuc  1 e 1 @533 ]
+[s S146 . 1 `uc 1 SSP1M0 1 0 :1:0 
+`uc 1 SSP1M1 1 0 :1:1 
+`uc 1 SSP1M2 1 0 :1:2 
+`uc 1 SSP1M3 1 0 :1:3 
+`uc 1 CKP 1 0 :1:4 
+`uc 1 SSPEN 1 0 :1:5 
+`uc 1 SSPOV 1 0 :1:6 
+`uc 1 WCOL 1 0 :1:7 
+]
+"3238
+[s S155 . 1 `uc 1 SSPM 1 0 :4:0 
+`uc 1 . 1 0 :1:4 
+`uc 1 SSP1EN 1 0 :1:5 
+`uc 1 SSP1OV 1 0 :1:6 
+]
+[u S160 . 1 `S146 1 . 1 0 `S155 1 . 1 0 ]
+[v _SSP1CON1bits SSP1CON1bits `VES160  1 e 1 @533 ]
+"3449
+[v _SSP1CON2 SSP1CON2 `VEuc  1 e 1 @534 ]
+[s S296 . 1 `uc 1 SEN 1 0 :1:0 
+`uc 1 RSEN 1 0 :1:1 
+`uc 1 PEN 1 0 :1:2 
+`uc 1 RCEN 1 0 :1:3 
+`uc 1 ACKEN 1 0 :1:4 
+`uc 1 ACKDT 1 0 :1:5 
+`uc 1 ACKSTAT 1 0 :1:6 
+`uc 1 GCEN 1 0 :1:7 
+]
+"3471
+[u S305 . 1 `S296 1 . 1 0 ]
+[v _SSP1CON2bits SSP1CON2bits `VES305  1 e 1 @534 ]
+"3928
+[v _ACTCON ACTCON `VEuc  1 e 1 @923 ]
+"15 D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_LDR/src/main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"35
+} 0
+"4 D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_LDR/src/init.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+{
+"12
+} 0
+"26
+[v _WDT_Initialize WDT_Initialize `(v  1 e 1 0 ]
+{
+"30
+} 0
+"8 D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_LDR/src/tmr1.c
+[v _TMR1_Initialize TMR1_Initialize `(v  1 e 1 0 ]
+{
+"34
+} 0
+"72
+[v _TMR1_SetInterruptHandler TMR1_SetInterruptHandler `(v  1 e 1 0 ]
+{
+[v TMR1_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 2 ]
+"74
+} 0
+"4 D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_LDR/src/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+{
+"36
+} 0
+"14 D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_LDR/src/init.c
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+{
+"24
+} 0
+"117 D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_LDR/src/i2c_master.c
+[v _I2C_Initialize I2C_Initialize `(v  1 e 1 0 ]
+{
+"124
+} 0
+"50 D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_LDR/src/vertebra_master_ldr.c
+[v _Read_All_Slave_Sensors Read_All_Slave_Sensors `(v  1 e 1 0 ]
+{
+"51
+[v Read_All_Slave_Sensors@n n `i  1 a 2 21 ]
+"57
+} 0
+"18
+[v _Read_Slave_Sensors Read_Slave_Sensors `(v  1 e 1 0 ]
+{
+[v Read_Slave_Sensors@esclavo esclavo `uc  1 a 1 wreg ]
+"20
+[v Read_Slave_Sensors@valorLuz2 valorLuz2 `us  1 a 2 17 ]
+[v Read_Slave_Sensors@valorLuz valorLuz `us  1 a 2 15 ]
+"19
+[v Read_Slave_Sensors@valor4 valor4 `uc  1 a 1 14 ]
+[v Read_Slave_Sensors@valor3 valor3 `uc  1 a 1 13 ]
+[v Read_Slave_Sensors@valor2 valor2 `uc  1 a 1 12 ]
+[v Read_Slave_Sensors@valor1 valor1 `uc  1 a 1 11 ]
+"18
+[v Read_Slave_Sensors@esclavo esclavo `uc  1 a 1 wreg ]
+"23
+[v Read_Slave_Sensors@esclavo esclavo `uc  1 a 1 19 ]
+"48
+} 0
+"27 D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_LDR/src/i2c_master_functions.c
+[v _I2C_Write1ByteRegister I2C_Write1ByteRegister `(v  1 e 1 0 ]
+{
+[v I2C_Write1ByteRegister@address address `uc  1 a 1 wreg ]
+[v I2C_Write1ByteRegister@address address `uc  1 a 1 wreg ]
+[v I2C_Write1ByteRegister@reg reg `uc  1 p 1 2 ]
+[v I2C_Write1ByteRegister@data data `uc  1 p 1 3 ]
+[v I2C_Write1ByteRegister@address address `uc  1 a 1 5 ]
+"35
+} 0
+"13
+[v _I2C_Read1ByteRegister I2C_Read1ByteRegister `(uc  1 e 1 0 ]
+{
+[v I2C_Read1ByteRegister@address address `uc  1 a 1 wreg ]
+"15
+[v I2C_Read1ByteRegister@returnValue returnValue `uc  1 a 1 5 ]
+"13
+[v I2C_Read1ByteRegister@address address `uc  1 a 1 wreg ]
+[v I2C_Read1ByteRegister@reg reg `uc  1 p 1 2 ]
+"15
+[v I2C_Read1ByteRegister@address address `uc  1 a 1 4 ]
+"25
+} 0
+"218 D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_LDR/src/i2c_master.c
+[v _I2C_SetAddressNackCallback I2C_SetAddressNackCallback `(v  1 e 1 0 ]
+{
+[v I2C_SetAddressNackCallback@cb cb `*.37(E358  1 p 2 7 ]
+[v I2C_SetAddressNackCallback@ptr ptr `*.1v  1 p 1 9 ]
+"221
+} 0
+"126
+[v _I2C_Open I2C_Open `(E353  1 e 1 0 ]
+{
+[v I2C_Open@address address `uc  1 a 1 wreg ]
+"128
+[v I2C_Open@returnValue returnValue `E353  1 a 1 4 ]
+"126
+[v I2C_Open@address address `uc  1 a 1 wreg ]
+"128
+[v I2C_Open@address address `uc  1 a 1 3 ]
+"157
+} 0
+"427
+[v _I2C_MasterOpen I2C_MasterOpen `T(a  1 s 1 I2C_MasterOpen ]
+{
+"439
+} 0
+"198
+[v _I2C_MasterWrite I2C_MasterWrite `(E353  1 e 1 0 ]
+{
+"201
+} 0
+"174
+[v _I2C_MasterOperation I2C_MasterOperation `(E353  1 e 1 0 ]
+{
+[v I2C_MasterOperation@read read `a  1 a 1 wreg ]
+"176
+[v I2C_MasterOperation@returnValue returnValue `E353  1 a 1 1 ]
+"174
+[v I2C_MasterOperation@read read `a  1 a 1 wreg ]
+"176
+[v I2C_MasterOperation@read read `a  1 a 1 0 ]
+"194
+} 0
+"237
+[v _I2C_Poller I2C_Poller `(v  1 s 1 I2C_Poller ]
+{
+"244
+} 0
+"509
+[v _I2C_MasterWaitForEvent I2C_MasterWaitForEvent `T(v  1 s 1 I2C_MasterWaitForEvent ]
+{
+"518
+} 0
+"246
+[v _I2C_MasterFsm I2C_MasterFsm `T(v  1 s 1 I2C_MasterFsm ]
+{
+"255
+} 0
+"401
+[v _I2C_DO_ADDRESS_NACK I2C_DO_ADDRESS_NACK `(E2558  1 s 1 I2C_DO_ADDRESS_NACK ]
+{
+"413
+} 0
+"395
+[v _I2C_DO_RESET I2C_DO_RESET `(E2558  1 s 1 I2C_DO_RESET ]
+{
+"400
+} 0
+"389
+[v _I2C_DO_RX_NACK_RESTART I2C_DO_RX_NACK_RESTART `(E2558  1 s 1 I2C_DO_RX_NACK_RESTART ]
+{
+"393
+} 0
+"383
+[v _I2C_DO_RX_NACK_STOP I2C_DO_RX_NACK_STOP `(E2558  1 s 1 I2C_DO_RX_NACK_STOP ]
+{
+"387
+} 0
+"376
+[v _I2C_DO_RX_ACK I2C_DO_RX_ACK `(E2558  1 s 1 I2C_DO_RX_ACK ]
+{
+"380
+} 0
+"370
+[v _I2C_DO_SEND_STOP I2C_DO_SEND_STOP `(E2558  1 s 1 I2C_DO_SEND_STOP ]
+{
+"374
+} 0
+"364
+[v _I2C_DO_SEND_RESTART I2C_DO_SEND_RESTART `(E2558  1 s 1 I2C_DO_SEND_RESTART ]
+{
+"368
+} 0
+"357
+[v _I2C_DO_SEND_RESTART_WRITE I2C_DO_SEND_RESTART_WRITE `(E2558  1 s 1 I2C_DO_SEND_RESTART_WRITE ]
+{
+"361
+} 0
+"351
+[v _I2C_DO_SEND_RESTART_READ I2C_DO_SEND_RESTART_READ `(E2558  1 s 1 I2C_DO_SEND_RESTART_READ ]
+{
+"355
+} 0
+"327
+[v _I2C_DO_RCEN I2C_DO_RCEN `(E2558  1 s 1 I2C_DO_RCEN ]
+{
+"332
+} 0
+"303
+[v _I2C_DO_RX I2C_DO_RX `(E2558  1 s 1 I2C_DO_RX ]
+{
+"325
+} 0
+"279
+[v _I2C_DO_TX I2C_DO_TX `(E2558  1 s 1 I2C_DO_TX ]
+{
+"301
+} 0
+"272
+[v _I2C_DO_SEND_ADR_WRITE I2C_DO_SEND_ADR_WRITE `(E2558  1 s 1 I2C_DO_SEND_ADR_WRITE ]
+{
+"277
+} 0
+"265
+[v _I2C_DO_SEND_ADR_READ I2C_DO_SEND_ADR_READ `(E2558  1 s 1 I2C_DO_SEND_ADR_READ ]
+{
+"270
+} 0
+"258
+[v _I2C_DO_IDLE I2C_DO_IDLE `(E2558  1 s 1 I2C_DO_IDLE ]
+{
+"263
+} 0
+"334
+[v _I2C_DO_TX_EMPTY I2C_DO_TX_EMPTY `(E2558  1 s 1 I2C_DO_TX_EMPTY ]
+{
+"349
+} 0
+"504
+[v _I2C_MasterSetIrq I2C_MasterSetIrq `T(v  1 s 1 I2C_MasterSetIrq ]
+{
+"507
+} 0
+"477
+[v _I2C_MasterIsNack I2C_MasterIsNack `T(a  1 s 1 I2C_MasterIsNack ]
+{
+"480
+} 0
+"452
+[v _I2C_MasterSendTxData I2C_MasterSendTxData `T(v  1 s 1 I2C_MasterSendTxData ]
+{
+[v I2C_MasterSendTxData@data data `uc  1 a 1 wreg ]
+[v I2C_MasterSendTxData@data data `uc  1 a 1 wreg ]
+"454
+[v I2C_MasterSendTxData@data data `uc  1 a 1 2 ]
+"455
+} 0
+"482
+[v _I2C_MasterSendAck I2C_MasterSendAck `T(v  1 s 1 I2C_MasterSendAck ]
+{
+"486
+} 0
+"447
+[v _I2C_MasterGetRxData I2C_MasterGetRxData `T(uc  1 s 1 I2C_MasterGetRxData ]
+{
+"450
+} 0
+"488
+[v _I2C_MasterSendNack I2C_MasterSendNack `T(v  1 s 1 I2C_MasterSendNack ]
+{
+"492
+} 0
+"462
+[v _I2C_MasterStartRx I2C_MasterStartRx `T(v  1 s 1 I2C_MasterStartRx ]
+{
+"465
+} 0
+"37 D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_LDR/src/i2c_master_functions.c
+[v _rd1RegCompleteHandler rd1RegCompleteHandler `(E358  1 s 1 rd1RegCompleteHandler ]
+{
+[v rd1RegCompleteHandler@ptr ptr `*.4v  1 p 1 1 ]
+"42
+} 0
+"421 D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_LDR/src/i2c_master.c
+[v _I2C_CallbackReturnReset I2C_CallbackReturnReset `(E358  1 e 1 0 ]
+{
+"424
+} 0
+"416
+[v _I2C_CallbackReturnStop I2C_CallbackReturnStop `(E358  1 e 1 0 ]
+{
+"419
+} 0
+"44 D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_LDR/src/i2c_master_functions.c
+[v _wr1RegCompleteHandler wr1RegCompleteHandler `(E358  1 s 1 wr1RegCompleteHandler ]
+{
+[v wr1RegCompleteHandler@ptr ptr `*.4v  1 p 1 1 ]
+"49
+} 0
+"213 D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_LDR/src/i2c_master.c
+[v _I2C_SetDataCompleteCallback I2C_SetDataCompleteCallback `(v  1 e 1 0 ]
+{
+[v I2C_SetDataCompleteCallback@cb cb `*.37(E358  1 p 2 7 ]
+[v I2C_SetDataCompleteCallback@ptr ptr `*.4v  1 p 1 9 ]
+"216
+} 0
+"223
+[v _I2C_SetCallback I2C_SetCallback `(v  1 s 1 I2C_SetCallback ]
+{
+[v I2C_SetCallback@idx idx `E2576  1 a 1 wreg ]
+[v I2C_SetCallback@idx idx `E2576  1 a 1 wreg ]
+[v I2C_SetCallback@cb cb `*.37(E358  1 p 2 2 ]
+[v I2C_SetCallback@ptr ptr `*.4v  1 p 1 4 ]
+"225
+[v I2C_SetCallback@idx idx `E2576  1 a 1 6 ]
+"235
+} 0
+"203
+[v _I2C_SetBuffer I2C_SetBuffer `(v  1 e 1 0 ]
+{
+[v I2C_SetBuffer@buffer buffer `*.4v  1 a 1 wreg ]
+[v I2C_SetBuffer@buffer buffer `*.4v  1 a 1 wreg ]
+[v I2C_SetBuffer@bufferSize bufferSize `ui  1 p 2 2 ]
+"205
+[v I2C_SetBuffer@buffer buffer `*.4v  1 a 1 5 ]
+"211
+} 0
+"472
+[v _I2C_MasterStop I2C_MasterStop `T(v  1 s 1 I2C_MasterStop ]
+{
+"475
+} 0
+"457
+[v _I2C_MasterEnableRestart I2C_MasterEnableRestart `T(v  1 s 1 I2C_MasterEnableRestart ]
+{
+"460
+} 0
+"467
+[v _I2C_MasterStart I2C_MasterStart `T(v  1 s 1 I2C_MasterStart ]
+{
+"470
+} 0
+"159
+[v _I2C_Close I2C_Close `(E353  1 e 1 0 ]
+{
+"161
+[v I2C_Close@returnValue returnValue `E353  1 a 1 3 ]
+"172
+} 0
+"494
+[v _I2C_MasterDisableIrq I2C_MasterDisableIrq `T(v  1 s 1 I2C_MasterDisableIrq ]
+{
+"497
+} 0
+"441
+[v _I2C_MasterClose I2C_MasterClose `T(v  1 s 1 I2C_MasterClose ]
+{
+"445
+} 0
+"499
+[v _I2C_MasterClearIrq I2C_MasterClearIrq `T(v  1 s 1 I2C_MasterClearIrq ]
+{
+"502
+} 0
+"11 D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_LDR/src/vertebra_master_ldr.c
+[v _Get_Master_TMR1_flag Get_Master_TMR1_flag `(uc  1 e 1 0 ]
+{
+"13
+} 0
+"15
+[v _Clear_Master_TMR1_flag Clear_Master_TMR1_flag `(v  1 e 1 0 ]
+{
+"17
+} 0
+"4 D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_LDR/src/interrupt_manager.c
+[v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `II(v  1 e 1 0 ]
+{
+"22
+} 0
+"58 D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_LDR/src/tmr1.c
+[v _TMR1_ISR TMR1_ISR `(v  1 e 1 0 ]
+{
+"69
+} 0
+"36
+[v _TMR1_WriteTimer TMR1_WriteTimer `(v  1 e 1 0 ]
+{
+[v TMR1_WriteTimer@timerVal timerVal `us  1 p 2 0 ]
+"56
+} 0
+"7 D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_LDR/src/vertebra_master_ldr.c
+[v _TMR1_Master_InterruptHandler TMR1_Master_InterruptHandler `(v  1 e 1 0 ]
+{
+"9
+} 0

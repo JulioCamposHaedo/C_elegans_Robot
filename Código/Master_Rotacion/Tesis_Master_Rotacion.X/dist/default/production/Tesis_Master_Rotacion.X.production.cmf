@@ -1,0 +1,1169 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$C:\Users\julio\AppData\Local\Temp\s684.o
+reset_vec CODE 0 0 0 2 2
+end_init CODE 0 19 19 2 2
+config CONFIG 4 8007 8007 2 2
+$dist/default/production\Tesis_Master_Rotacion.X.production.o
+cinit CODE 0 1B 1B 19 2
+text1 CODE 0 35A 35A 10 2
+text2 CODE 0 436 436 4 2
+text3 CODE 0 2DE 2DE 18 2
+text4 CODE 0 3ED 3ED 6 2
+text5 CODE 0 322 322 15 2
+text6 CODE 0 3BD 3BD 9 2
+text7 CODE 0 3C6 3C6 9 2
+text8 CODE 0 2A5 2A5 1D 2
+text9 CODE 0 34 34 7E 2
+text10 CODE 0 37A 37A F 2
+text11 CODE 0 187 187 33 2
+text12 CODE 0 389 389 D 2
+text13 CODE 0 14D 14D 3A 2
+text14 CODE 0 396 396 D 2
+text15 CODE 0 3FF 3FF 5 2
+text16 CODE 0 286 286 1F 2
+text17 CODE 0 3A3 3A3 D 2
+text18 CODE 0 3F3 3F3 6 2
+text19 CODE 0 215 215 2B 2
+text20 CODE 0 1E9 1E9 2C 2
+text21 CODE 0 404 404 5 2
+text22 CODE 0 409 409 5 2
+text23 CODE 0 40E 40E 5 2
+text24 CODE 0 413 413 5 2
+text25 CODE 0 418 418 5 2
+text26 CODE 0 41D 41D 5 2
+text27 CODE 0 422 422 5 2
+text28 CODE 0 427 427 5 2
+text29 CODE 0 3E0 3E0 7 2
+text30 CODE 0 107 107 46 2
+text31 CODE 0 B2 B2 55 2
+text32 CODE 0 3D8 3D8 8 2
+text33 CODE 0 3CF 3CF 9 2
+text34 CODE 0 42C 42C 5 2
+text35 CODE 0 1BA 1BA 2F 2
+text36 CODE 0 445 445 3 2
+text37 CODE 0 3F9 3F9 6 2
+text38 CODE 0 431 431 5 2
+text39 CODE 0 43A 43A 4 2
+text40 CODE 0 448 448 3 2
+text41 CODE 0 43E 43E 4 2
+text42 CODE 0 44B 44B 3 2
+text43 CODE 0 463 463 2 2
+text44 CODE 0 465 465 2 2
+text45 CODE 0 337 337 12 2
+text46 CODE 0 3B0 3B0 D 2
+text47 CODE 0 240 240 26 2
+text48 CODE 0 36A 36A 10 2
+text49 CODE 0 44E 44E 3 2
+text50 CODE 0 451 451 3 2
+text51 CODE 0 454 454 3 2
+text52 CODE 0 2C2 2C2 1C 2
+text53 CODE 0 457 457 3 2
+text54 CODE 0 45A 45A 3 2
+text55 CODE 0 45D 45D 3 2
+text56 CODE 0 467 467 2 2
+text57 CODE 0 469 469 2 2
+text59 CODE 0 30C 30C 16 2
+text60 CODE 0 349 349 11 2
+text61 CODE 0 460 460 3 2
+nvBANK0 BANK0 1 52 52 4 1
+maintext CODE 0 2F6 2F6 16 2
+cstackCOMMON COMMON 1 70 70 B 1
+cstackBANK0 BANK0 1 42 42 10 1
+stringtext1 STRCODE 0 266 266 20 2
+intentry CODE 0 4 4 15 2
+bssBANK0 BANK0 1 20 20 22 1
+idataBANK0 CODE 0 442 442 3 2
+dataBANK0 BANK0 1 56 56 3 1
+clrtext CODE 0 3E7 3E7 6 2
+bssCOMMON COMMON 1 7B 7B 1 1
+config CONFIG 4 8007 8007 2 2
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 59-6F 1
+RAM A0-EF 1
+RAM 120-16F 1
+RAM 1A0-1EF 1
+RAM 220-26F 1
+RAM 2A0-2EF 1
+RAM 320-36F 1
+RAM 3A0-3EF 1
+RAM 420-46F 1
+RAM 4A0-4EF 1
+RAM 520-56F 1
+RAM 5A0-5EF 1
+RAM 620-64F 1
+BANK0 59-6F 1
+BANK1 A0-EF 1
+BANK2 120-16F 1
+BANK3 1A0-1EF 1
+BANK4 220-26F 1
+BANK5 2A0-2EF 1
+BANK6 320-36F 1
+BANK7 3A0-3EF 1
+BANK8 420-46F 1
+BANK9 4A0-4EF 1
+CONST 2-3 2
+CONST 46B-1FFF 2
+ENTRY 2-3 2
+ENTRY 46B-1FFF 2
+IDLOC 8000-8003 2
+SFR10 500-51F 1
+SFR11 580-59F 1
+SFR12 600-61F 1
+SFR13 680-6EF 1
+SFR14 700-76F 1
+SFR15 780-7EF 1
+SFR16 800-86F 1
+SFR17 880-8EF 1
+SFR18 900-96F 1
+SFR19 980-9EF 1
+SFR20 A00-A6F 1
+SFR21 A80-AEF 1
+SFR22 B00-B6F 1
+SFR23 B80-BEF 1
+SFR24 C00-C6F 1
+SFR25 C80-CEF 1
+SFR26 D00-D6F 1
+SFR27 D80-DEF 1
+SFR28 E00-E6F 1
+SFR29 E80-EEF 1
+SFR30 F00-F6F 1
+SFR31 F80-FEF 1
+STACK 2039-23EF 1
+CODE 2-3 2
+CODE 46B-1FFF 2
+SFR0 0-1F 1
+SFR1 80-9F 1
+SFR2 100-11F 1
+SFR3 180-19F 1
+SFR4 200-21F 1
+SFR5 280-29F 1
+SFR6 300-31F 1
+SFR7 380-39F 1
+SFR8 400-41F 1
+SFR9 480-49F 1
+BANK10 520-56F 1
+BANK11 5A0-5EF 1
+BANK12 620-64F 1
+BIGRAM 2000-23EF 1
+COMMON 7C-7D 1
+STRCODE 2-3 2
+STRCODE 46B-1FFF 2
+STRING 2-3 2
+STRING 46B-1FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\Tesis_Master_Rotacion.X.production.o
+1B cinit CODE >2268:C:\Users\julio\AppData\Local\Temp\s684.s
+1B cinit CODE >2271:C:\Users\julio\AppData\Local\Temp\s684.s
+1B cinit CODE >2321:C:\Users\julio\AppData\Local\Temp\s684.s
+1E cinit CODE >2322:C:\Users\julio\AppData\Local\Temp\s684.s
+1F cinit CODE >2323:C:\Users\julio\AppData\Local\Temp\s684.s
+22 cinit CODE >2324:C:\Users\julio\AppData\Local\Temp\s684.s
+23 cinit CODE >2325:C:\Users\julio\AppData\Local\Temp\s684.s
+26 cinit CODE >2326:C:\Users\julio\AppData\Local\Temp\s684.s
+27 cinit CODE >2343:C:\Users\julio\AppData\Local\Temp\s684.s
+28 cinit CODE >2347:C:\Users\julio\AppData\Local\Temp\s684.s
+29 cinit CODE >2348:C:\Users\julio\AppData\Local\Temp\s684.s
+2A cinit CODE >2349:C:\Users\julio\AppData\Local\Temp\s684.s
+2B cinit CODE >2350:C:\Users\julio\AppData\Local\Temp\s684.s
+2C cinit CODE >2351:C:\Users\julio\AppData\Local\Temp\s684.s
+2D cinit CODE >2352:C:\Users\julio\AppData\Local\Temp\s684.s
+30 cinit CODE >2358:C:\Users\julio\AppData\Local\Temp\s684.s
+30 cinit CODE >2360:C:\Users\julio\AppData\Local\Temp\s684.s
+31 cinit CODE >2361:C:\Users\julio\AppData\Local\Temp\s684.s
+32 cinit CODE >2362:C:\Users\julio\AppData\Local\Temp\s684.s
+4 intentry CODE >4:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/interrupt_manager.c
+6 intentry CODE >7:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/interrupt_manager.c
+A intentry CODE >9:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/interrupt_manager.c
+14 intentry CODE >11:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/interrupt_manager.c
+17 intentry CODE >22:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/interrupt_manager.c
+460 text61 CODE >28:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/vertebra.c
+460 text61 CODE >29:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/vertebra.c
+462 text61 CODE >30:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/vertebra.c
+349 text60 CODE >36:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/tmr1.c
+349 text60 CODE >38:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/tmr1.c
+34E text60 CODE >41:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/tmr1.c
+34F text60 CODE >44:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/tmr1.c
+351 text60 CODE >45:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/tmr1.c
+353 text60 CODE >48:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/tmr1.c
+354 text60 CODE >49:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/tmr1.c
+355 text60 CODE >53:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/tmr1.c
+357 text60 CODE >54:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/tmr1.c
+359 text60 CODE >56:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/tmr1.c
+30C text59 CODE >58:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/tmr1.c
+30C text59 CODE >62:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/tmr1.c
+30E text59 CODE >63:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/tmr1.c
+315 text59 CODE >65:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/tmr1.c
+31C text59 CODE >67:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/tmr1.c
+321 text59 CODE >69:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/tmr1.c
+469 text57 CODE >36:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/vertebra.c
+469 text57 CODE >37:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/vertebra.c
+46A text57 CODE >38:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/vertebra.c
+467 text56 CODE >32:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/vertebra.c
+467 text56 CODE >33:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/vertebra.c
+468 text56 CODE >34:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/vertebra.c
+45D text55 CODE >499:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+45D text55 CODE >501:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+45F text55 CODE >502:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+45A text54 CODE >441:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+45A text54 CODE >444:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+45C text54 CODE >445:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+457 text53 CODE >494:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+457 text53 CODE >496:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+459 text53 CODE >497:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+2C2 text52 CODE >159:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+2C2 text52 CODE >161:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+2C4 text52 CODE >162:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+2C9 text52 CODE >164:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+2CA text52 CODE >165:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+2CE text52 CODE >166:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+2D1 text52 CODE >167:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+2D4 text52 CODE >168:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+2D7 text52 CODE >169:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+2DC text52 CODE >171:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+2DD text52 CODE >172:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+454 text51 CODE >467:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+454 text51 CODE >469:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+456 text51 CODE >470:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+451 text50 CODE >457:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+451 text50 CODE >459:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+453 text50 CODE >460:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+44E text49 CODE >472:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+44E text49 CODE >474:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+450 text49 CODE >475:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+36A text48 CODE >203:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+36B text48 CODE >205:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+370 text48 CODE >207:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+374 text48 CODE >208:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+378 text48 CODE >209:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+379 text48 CODE >211:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+240 text47 CODE >223:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+241 text47 CODE >225:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+247 text47 CODE >227:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+24F text47 CODE >228:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+257 text47 CODE >229:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+258 text47 CODE >232:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+260 text47 CODE >233:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+265 text47 CODE >235:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+3B0 text46 CODE >213:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+3B0 text46 CODE >215:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+3BC text46 CODE >216:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+337 text45 CODE >22:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master_functions.c
+337 text45 CODE >24:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master_functions.c
+340 text45 CODE >25:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master_functions.c
+347 text45 CODE >26:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master_functions.c
+348 text45 CODE >27:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master_functions.c
+465 text44 CODE >416:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+465 text44 CODE >418:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+466 text44 CODE >419:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+463 text43 CODE >421:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+463 text43 CODE >423:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+464 text43 CODE >424:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+44B text42 CODE >462:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+44B text42 CODE >464:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+44D text42 CODE >465:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+43E text41 CODE >488:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+43E text41 CODE >490:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+440 text41 CODE >491:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+441 text41 CODE >492:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+448 text40 CODE >447:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+448 text40 CODE >449:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+44A text40 CODE >450:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+43A text39 CODE >482:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+43A text39 CODE >484:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+43C text39 CODE >485:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+43D text39 CODE >486:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+431 text38 CODE >452:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+432 text38 CODE >454:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+435 text38 CODE >455:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+3F9 text37 CODE >477:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+3F9 text37 CODE >479:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+3FE text37 CODE >480:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+445 text36 CODE >504:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+445 text36 CODE >506:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+447 text36 CODE >507:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+1BA text35 CODE >334:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+1BA text35 CODE >336:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+1BC text35 CODE >337:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+1BD text35 CODE >341:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+1C1 text35 CODE >343:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+1C4 text35 CODE >344:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+1C6 text35 CODE >347:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+1CA text35 CODE >348:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+1E8 text35 CODE >349:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+42C text34 CODE >258:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+42C text34 CODE >260:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+42E text34 CODE >261:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+42F text34 CODE >262:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+430 text34 CODE >263:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+3CF text33 CODE >265:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+3CF text33 CODE >267:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+3D1 text33 CODE >268:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+3D6 text33 CODE >269:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+3D7 text33 CODE >270:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+3D8 text32 CODE >272:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+3D8 text32 CODE >274:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+3DA text32 CODE >275:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+3DE text32 CODE >276:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+3DF text32 CODE >277:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+B2 text31 CODE >279:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+B2 text31 CODE >281:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+BB text31 CODE >286:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+BF text31 CODE >288:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+C3 text31 CODE >292:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+C7 text31 CODE >293:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+EA text31 CODE >295:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+EA text31 CODE >297:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+EC text31 CODE >298:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+F8 text31 CODE >299:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+106 text31 CODE >301:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+107 text30 CODE >303:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+107 text30 CODE >305:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+115 text30 CODE >306:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+11F text30 CODE >308:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+122 text30 CODE >309:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+124 text30 CODE >311:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+124 text30 CODE >313:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+125 text30 CODE >314:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+126 text30 CODE >318:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+12A text30 CODE >322:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+12E text30 CODE >323:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+14C text30 CODE >325:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+3E0 text29 CODE >327:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+3E0 text29 CODE >329:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+3E2 text29 CODE >330:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+3E5 text29 CODE >331:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+3E6 text29 CODE >332:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+427 text28 CODE >351:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+427 text28 CODE >353:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+42A text28 CODE >354:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+42B text28 CODE >355:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+422 text27 CODE >357:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+422 text27 CODE >359:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+425 text27 CODE >360:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+426 text27 CODE >361:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+41D text26 CODE >364:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+41D text26 CODE >366:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+420 text26 CODE >367:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+421 text26 CODE >368:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+418 text25 CODE >370:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+418 text25 CODE >372:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+41B text25 CODE >373:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+41C text25 CODE >374:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+413 text24 CODE >376:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+413 text24 CODE >378:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+416 text24 CODE >379:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+417 text24 CODE >380:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+40E text23 CODE >383:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+40E text23 CODE >385:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+411 text23 CODE >386:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+412 text23 CODE >387:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+409 text22 CODE >389:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+409 text22 CODE >391:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+40C text22 CODE >392:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+40D text22 CODE >393:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+404 text21 CODE >395:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+404 text21 CODE >397:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+406 text21 CODE >398:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+407 text21 CODE >399:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+408 text21 CODE >400:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+1E9 text20 CODE >401:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+1E9 text20 CODE >403:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+1EB text20 CODE >404:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+1EF text20 CODE >405:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+1F0 text20 CODE >409:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+1F4 text20 CODE >411:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+1F8 text20 CODE >412:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+214 text20 CODE >413:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+215 text19 CODE >246:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+215 text19 CODE >248:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+218 text19 CODE >250:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+225 text19 CODE >252:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+22A text19 CODE >254:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+23F text19 CODE >255:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+3F3 text18 CODE >509:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+3F3 text18 CODE >511:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+3F3 text18 CODE >513:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+3F8 text18 CODE >518:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+3A3 text17 CODE >237:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+3A3 text17 CODE >239:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+3A4 text17 CODE >241:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+3A7 text17 CODE >242:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+3AA text17 CODE >239:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+3AF text17 CODE >244:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+286 text16 CODE >174:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+288 text16 CODE >176:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+28A text16 CODE >177:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+28E text16 CODE >179:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+28F text16 CODE >180:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+290 text16 CODE >182:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+295 text16 CODE >184:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+297 text16 CODE >185:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+298 text16 CODE >188:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+29C text16 CODE >190:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+29F text16 CODE >191:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+2A2 text16 CODE >193:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+2A4 text16 CODE >194:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+3FF text15 CODE >198:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+3FF text15 CODE >200:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+403 text15 CODE >201:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+396 text14 CODE >427:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+396 text14 CODE >429:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+39B text14 CODE >431:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+39C text14 CODE >432:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+39E text14 CODE >433:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+39F text14 CODE >434:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+3A1 text14 CODE >435:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+3A2 text14 CODE >439:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+14D text13 CODE >126:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+14E text13 CODE >128:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+150 text13 CODE >130:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+155 text13 CODE >132:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+159 text13 CODE >133:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+15A text13 CODE >134:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+15B text13 CODE >135:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+15C text13 CODE >136:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+160 text13 CODE >137:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+164 text13 CODE >138:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+165 text13 CODE >141:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+169 text13 CODE >142:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+16A text13 CODE >143:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+16E text13 CODE >144:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+16F text13 CODE >145:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+173 text13 CODE >146:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+174 text13 CODE >147:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+178 text13 CODE >148:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+179 text13 CODE >149:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+17D text13 CODE >150:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+17E text13 CODE >152:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+181 text13 CODE >153:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+184 text13 CODE >154:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+185 text13 CODE >155:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+185 text13 CODE >156:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+186 text13 CODE >157:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+389 text12 CODE >218:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+389 text12 CODE >220:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+395 text12 CODE >221:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+187 text11 CODE >12:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master_functions.c
+189 text11 CODE >14:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master_functions.c
+193 text11 CODE >15:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master_functions.c
+19F text11 CODE >16:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master_functions.c
+1A7 text11 CODE >17:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master_functions.c
+1AE text11 CODE >18:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master_functions.c
+1B1 text11 CODE >19:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master_functions.c
+1B9 text11 CODE >20:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master_functions.c
+37A text10 CODE >39:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/vertebra.c
+37C text10 CODE >41:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/vertebra.c
+388 text10 CODE >42:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/vertebra.c
+34 text9 CODE >43:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/vertebra.c
+36 text9 CODE >46:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/vertebra.c
+40 text9 CODE >47:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/vertebra.c
+44 text9 CODE >48:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/vertebra.c
+44 text9 CODE >49:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/vertebra.c
+54 text9 CODE >50:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/vertebra.c
+58 text9 CODE >51:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/vertebra.c
+59 text9 CODE >52:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/vertebra.c
+5F text9 CODE >53:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/vertebra.c
+64 text9 CODE >58:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/vertebra.c
+65 text9 CODE >59:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/vertebra.c
+6D text9 CODE >60:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/vertebra.c
+70 text9 CODE >61:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/vertebra.c
+71 text9 CODE >62:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/vertebra.c
+71 text9 CODE >63:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/vertebra.c
+73 text9 CODE >64:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/vertebra.c
+7B text9 CODE >65:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/vertebra.c
+7D text9 CODE >66:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/vertebra.c
+7E text9 CODE >68:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/vertebra.c
+82 text9 CODE >69:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/vertebra.c
+8A text9 CODE >70:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/vertebra.c
+8F text9 CODE >71:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/vertebra.c
+90 text9 CODE >74:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/vertebra.c
+A3 text9 CODE >75:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/vertebra.c
+A8 text9 CODE >78:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/vertebra.c
+AE text9 CODE >79:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/vertebra.c
+AF text9 CODE >80:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/vertebra.c
+B0 text9 CODE >81:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/vertebra.c
+B1 text9 CODE >84:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/vertebra.c
+2A5 text8 CODE >85:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/vertebra.c
+2A5 text8 CODE >86:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/vertebra.c
+2A8 text8 CODE >88:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/vertebra.c
+2A9 text8 CODE >89:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/vertebra.c
+2AF text8 CODE >90:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/vertebra.c
+2B4 text8 CODE >88:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/vertebra.c
+2C1 text8 CODE >92:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/vertebra.c
+3C6 text7 CODE >117:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+3C6 text7 CODE >119:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+3C8 text7 CODE >120:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+3CA text7 CODE >121:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+3CB text7 CODE >122:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+3CD text7 CODE >123:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+3CE text7 CODE >124:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/i2c_master.c
+3BD text6 CODE >13:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/init.c
+3BD text6 CODE >16:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/init.c
+3C0 text6 CODE >18:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/init.c
+3C1 text6 CODE >20:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/init.c
+3C3 text6 CODE >22:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/init.c
+3C5 text6 CODE >23:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/init.c
+322 text5 CODE >3:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/pin_manager.c
+322 text5 CODE >8:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/pin_manager.c
+324 text5 CODE >9:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/pin_manager.c
+326 text5 CODE >14:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/pin_manager.c
+329 text5 CODE >15:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/pin_manager.c
+32B text5 CODE >20:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/pin_manager.c
+32E text5 CODE >21:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/pin_manager.c
+330 text5 CODE >26:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/pin_manager.c
+332 text5 CODE >27:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/pin_manager.c
+334 text5 CODE >32:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/pin_manager.c
+336 text5 CODE >34:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/pin_manager.c
+3ED text4 CODE >71:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/tmr1.c
+3ED text4 CODE >72:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/tmr1.c
+3F2 text4 CODE >73:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/tmr1.c
+2DE text3 CODE >8:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/tmr1.c
+2DE text3 CODE >12:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/tmr1.c
+2E0 text3 CODE >15:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/tmr1.c
+2E2 text3 CODE >18:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/tmr1.c
+2E4 text3 CODE >21:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/tmr1.c
+2E5 text3 CODE >24:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/tmr1.c
+2E9 text3 CODE >27:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/tmr1.c
+2EB text3 CODE >30:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/tmr1.c
+2F2 text3 CODE >33:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/tmr1.c
+2F5 text3 CODE >34:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/tmr1.c
+436 text2 CODE >25:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/init.c
+436 text2 CODE >28:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/init.c
+439 text2 CODE >29:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/init.c
+35A text1 CODE >4:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/init.c
+35A text1 CODE >6:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/init.c
+35D text1 CODE >7:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/init.c
+360 text1 CODE >8:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/init.c
+363 text1 CODE >9:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/init.c
+366 text1 CODE >10:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/init.c
+369 text1 CODE >11:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/init.c
+2F6 maintext CODE >14:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/main.c
+2F6 maintext CODE >17:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/main.c
+2F9 maintext CODE >20:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/main.c
+2FA maintext CODE >23:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/main.c
+2FB maintext CODE >28:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/main.c
+303 maintext CODE >30:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/main.c
+306 maintext CODE >31:D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Master_Rotacion/src/main.c
+3E7 clrtext CODE >2332:C:\Users\julio\AppData\Local\Temp\s684.s
+3E7 clrtext CODE >2333:C:\Users\julio\AppData\Local\Temp\s684.s
+3E8 clrtext CODE >2334:C:\Users\julio\AppData\Local\Temp\s684.s
+3E8 clrtext CODE >2335:C:\Users\julio\AppData\Local\Temp\s684.s
+3E9 clrtext CODE >2336:C:\Users\julio\AppData\Local\Temp\s684.s
+3EA clrtext CODE >2337:C:\Users\julio\AppData\Local\Temp\s684.s
+3EB clrtext CODE >2338:C:\Users\julio\AppData\Local\Temp\s684.s
+3EC clrtext CODE >2339:C:\Users\julio\AppData\Local\Temp\s684.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+___latbits 2 0 ABS 0 - dist/default/production\Tesis_Master_Rotacion.X.production.o
+__LdataBANK0 0 0 ABS 0 dataBANK0 -
+__Hspace_0 46B 0 ABS 0 - -
+__Hspace_1 7C 0 ABS 0 - -
+__Hspace_2 0 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__Hspace_4 10010 0 ABS 0 - -
+__HidataBANK0 0 0 ABS 0 idataBANK0 -
+__size_of_I2C_MasterSendTxData 0 0 ABS 0 - dist/default/production\Tesis_Master_Rotacion.X.production.o
+__size_of_I2C_DO_RX_ACK 0 0 ABS 0 - dist/default/production\Tesis_Master_Rotacion.X.production.o
+__size_of_I2C_Write1ByteRegister 0 0 ABS 0 - dist/default/production\Tesis_Master_Rotacion.X.production.o
+__Heeprom_data 0 0 EEDATA 3 eeprom_data -
+_T1CONbits 18 0 ABS 0 - dist/default/production\Tesis_Master_Rotacion.X.production.o
+__end_of_I2C_Close 5BC 0 CODE 0 text52 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__end_of_I2C_DO_RX 29A 0 CODE 0 text30 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__end_of_I2C_DO_TX 20E 0 CODE 0 text31 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__end_of_WDT_Initialize 874 0 CODE 0 text2 dist/default/production\Tesis_Master_Rotacion.X.production.o
+_I2C_CallbackReturnStop 8CA 0 CODE 0 text44 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__Hstrings 0 0 ABS 0 strings -
+__size_of_I2C_MasterFsm 0 0 ABS 0 - dist/default/production\Tesis_Master_Rotacion.X.production.o
+__size_of_I2C_Close 0 0 ABS 0 - dist/default/production\Tesis_Master_Rotacion.X.production.o
+__size_of_I2C_DO_RX 0 0 ABS 0 - dist/default/production\Tesis_Master_Rotacion.X.production.o
+__size_of_I2C_DO_TX 0 0 ABS 0 - dist/default/production\Tesis_Master_Rotacion.X.production.o
+_LATA 10C 0 ABS 0 - dist/default/production\Tesis_Master_Rotacion.X.production.o
+_LATC 10E 0 ABS 0 - dist/default/production\Tesis_Master_Rotacion.X.production.o
+_WPUA 20C 0 ABS 0 - dist/default/production\Tesis_Master_Rotacion.X.production.o
+___sp 0 0 STACK 2 stack C:\Users\julio\AppData\Local\Temp\s684.o
+_flag 7B 0 COMMON 1 bssCOMMON dist/default/production\Tesis_Master_Rotacion.X.production.o
+_main 5EC 0 CODE 0 maintext dist/default/production\Tesis_Master_Rotacion.X.production.o
+btemp 7E 0 ABS 0 - dist/default/production\Tesis_Master_Rotacion.X.production.o
+__end_of_I2C_MasterOperation 54A 0 CODE 0 text16 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__end_of_I2C_MasterSendTxData 86C 0 CODE 0 text38 dist/default/production\Tesis_Master_Rotacion.X.production.o
+I2C_SetCallback@cb 72 0 COMMON 1 cstackCOMMON dist/default/production\Tesis_Master_Rotacion.X.production.o
+start 32 0 CODE 0 init C:\Users\julio\AppData\Local\Temp\s684.o
+__size_of_main 0 0 ABS 0 - dist/default/production\Tesis_Master_Rotacion.X.production.o
+_I2C_DO_ADDRESS_NACK 3D2 0 CODE 0 text20 dist/default/production\Tesis_Master_Rotacion.X.production.o
+_Rotar_All_Slaves 54A 0 CODE 0 text8 dist/default/production\Tesis_Master_Rotacion.X.production.o
+_I2C_MasterStartRx 896 0 CODE 0 text42 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__HbssCOMMON 0 0 ABS 0 bssCOMMON -
+I2C_MasterSendTxData@data 72 0 COMMON 1 cstackCOMMON dist/default/production\Tesis_Master_Rotacion.X.production.o
+__end_of_I2C_DO_IDLE 862 0 CODE 0 text34 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__end_of_I2C_DO_RCEN 7CE 0 CODE 0 text29 dist/default/production\Tesis_Master_Rotacion.X.production.o
+_OPTION_REGbits 95 0 ABS 0 - dist/default/production\Tesis_Master_Rotacion.X.production.o
+__size_of_I2C_Open 0 0 ABS 0 - dist/default/production\Tesis_Master_Rotacion.X.production.o
+__end_of_I2C_DO_RX_ACK 830 0 CODE 0 text24 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__LidataBANK0 0 0 ABS 0 idataBANK0 -
+__size_of_SetServo 0 0 ABS 0 - dist/default/production\Tesis_Master_Rotacion.X.production.o
+_I2C_Close 584 0 CODE 0 text52 dist/default/production\Tesis_Master_Rotacion.X.production.o
+_I2C_DO_RX 20E 0 CODE 0 text30 dist/default/production\Tesis_Master_Rotacion.X.production.o
+_I2C_DO_TX 164 0 CODE 0 text31 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__Hpowerup 0 0 CODE 0 powerup -
+I2C_SetCallback@idx 76 0 COMMON 1 cstackCOMMON dist/default/production\Tesis_Master_Rotacion.X.production.o
+I2C_SetCallback@ptr 74 0 COMMON 1 cstackCOMMON dist/default/production\Tesis_Master_Rotacion.X.production.o
+_I2C_DO_TX_EMPTY 374 0 CODE 0 text35 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__size_of_TMR1_Initialize 0 0 ABS 0 - dist/default/production\Tesis_Master_Rotacion.X.production.o
+__size_of_TMR1_WriteTimer 0 0 ABS 0 - dist/default/production\Tesis_Master_Rotacion.X.production.o
+__end_of_i2c_fsmStateTable 50C 0 STRCODE 0 stringtext1 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__size_of_Rotar_Slave 0 0 ABS 0 - dist/default/production\Tesis_Master_Rotacion.X.production.o
+__size_of_SYSTEM_Initialize 0 0 ABS 0 - dist/default/production\Tesis_Master_Rotacion.X.production.o
+__end_of_I2C_DO_SEND_ADR_WRITE 7C0 0 CODE 0 text32 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__size_of_Clear_Master_TMR1_flag 0 0 ABS 0 - dist/default/production\Tesis_Master_Rotacion.X.production.o
+_I2C_SetBuffer 6D4 0 CODE 0 text48 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__end_of_I2C_MasterFsm 480 0 CODE 0 text19 dist/default/production\Tesis_Master_Rotacion.X.production.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\julio\AppData\Local\Temp\s684.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\julio\AppData\Local\Temp\s684.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\julio\AppData\Local\Temp\s684.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\julio\AppData\Local\Temp\s684.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\julio\AppData\Local\Temp\s684.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\julio\AppData\Local\Temp\s684.o
+__LbssCOMMON 0 0 ABS 0 bssCOMMON -
+__end_of_I2C_MasterClearIrq 8C0 0 CODE 0 text55 dist/default/production\Tesis_Master_Rotacion.X.production.o
+wtemp0 7E 0 ABS 0 - dist/default/production\Tesis_Master_Rotacion.X.production.o
+__Hfunctab 0 0 ENTRY 0 functab -
+__size_of_TMR1_Master_InterruptHandler 0 0 ABS 0 - dist/default/production\Tesis_Master_Rotacion.X.production.o
+Rotar_All_Slaves@n 50 0 BANK0 1 cstackBANK0 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__size_of_I2C_SetCallback 0 0 ABS 0 - dist/default/production\Tesis_Master_Rotacion.X.production.o
+__Hclrtext 0 0 ABS 0 clrtext -
+_I2C_MasterWaitForEvent 7E6 0 CODE 0 text18 dist/default/production\Tesis_Master_Rotacion.X.production.o
+_I2C_DO_SEND_ADR_WRITE 7B0 0 CODE 0 text32 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__end_of_TMR1_Master_InterruptHandler 8C6 0 CODE 0 text61 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__size_of_I2C_CallbackReturnReset 0 0 ABS 0 - dist/default/production\Tesis_Master_Rotacion.X.production.o
+I2C_Open@returnValue 74 0 COMMON 1 cstackCOMMON dist/default/production\Tesis_Master_Rotacion.X.production.o
+_I2C_SetDataCompleteCallback 760 0 CODE 0 text46 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__size_of_I2C_MasterGetRxData 0 0 ABS 0 - dist/default/production\Tesis_Master_Rotacion.X.production.o
+_ACTCON 39B 0 ABS 0 - dist/default/production\Tesis_Master_Rotacion.X.production.o
+Rotar_Slave@esclavo 4E 0 BANK0 1 cstackBANK0 dist/default/production\Tesis_Master_Rotacion.X.production.o
+_ANSELA 18C 0 ABS 0 - dist/default/production\Tesis_Master_Rotacion.X.production.o
+_ANSELC 18E 0 ABS 0 - dist/default/production\Tesis_Master_Rotacion.X.production.o
+_APFCON 11D 0 ABS 0 - dist/default/production\Tesis_Master_Rotacion.X.production.o
+_BORCON 116 0 ABS 0 - dist/default/production\Tesis_Master_Rotacion.X.production.o
+_I2C_MasterOpen 72C 0 CODE 0 text14 dist/default/production\Tesis_Master_Rotacion.X.production.o
+_I2C_MasterStop 89C 0 CODE 0 text49 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__end_of_INTERRUPT_InterruptManager 32 0 CODE 0 intentry dist/default/production\Tesis_Master_Rotacion.X.production.o
+__size_of_TMR1_SetInterruptHandler 0 0 ABS 0 - dist/default/production\Tesis_Master_Rotacion.X.production.o
+_I2C_Open 29A 0 CODE 0 text13 dist/default/production\Tesis_Master_Rotacion.X.production.o
+_SetServo 6F4 0 CODE 0 text10 dist/default/production\Tesis_Master_Rotacion.X.production.o
+_I2C_MasterClearIrq 8BA 0 CODE 0 text55 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__size_of_I2C_DO_SEND_ADR_READ 0 0 ABS 0 - dist/default/production\Tesis_Master_Rotacion.X.production.o
+I2C_SetDataCompleteCallback@ptr 79 0 COMMON 1 cstackCOMMON dist/default/production\Tesis_Master_Rotacion.X.production.o
+_I2C_DO_RX_NACK_RESTART 812 0 CODE 0 text22 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__Lmaintext 0 0 ABS 0 maintext -
+__end_of_I2C_Open 30E 0 CODE 0 text13 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__LnvBANK0 0 0 ABS 0 nvBANK0 -
+__end_of_Rotar_All_Slaves 584 0 CODE 0 text8 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__end_of_SetServo 712 0 CODE 0 text10 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__end_of_I2C_DO_ADDRESS_NACK 42A 0 CODE 0 text20 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__size_of_Rotar_All_Slaves 0 0 ABS 0 - dist/default/production\Tesis_Master_Rotacion.X.production.o
+__size_of_I2C_MasterEnableRestart 0 0 ABS 0 - dist/default/production\Tesis_Master_Rotacion.X.production.o
+___stackhi 23EF 0 ABS 0 - C:\Users\julio\AppData\Local\Temp\s684.o
+___stacklo 2039 0 ABS 0 - C:\Users\julio\AppData\Local\Temp\s684.o
+__end_of_I2C_DO_SEND_ADR_READ 7B0 0 CODE 0 text33 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__size_of_I2C_DO_SEND_RESTART 0 0 ABS 0 - dist/default/production\Tesis_Master_Rotacion.X.production.o
+_I2C_MasterGetRxData 890 0 CODE 0 text40 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__size_of_I2C_DO_TX_EMPTY 0 0 ABS 0 - dist/default/production\Tesis_Master_Rotacion.X.production.o
+_i2c_fsmStateTable 4CC 0 STRCODE 0 stringtext1 dist/default/production\Tesis_Master_Rotacion.X.production.o
+_PIN_MANAGER_Initialize 644 0 CODE 0 text5 dist/default/production\Tesis_Master_Rotacion.X.production.o
+I2C_MasterOperation@read 42 0 BANK0 1 cstackBANK0 dist/default/production\Tesis_Master_Rotacion.X.production.o
+start_initialization 36 0 CODE 0 cinit dist/default/production\Tesis_Master_Rotacion.X.production.o
+__end_of_I2C_MasterOpen 746 0 CODE 0 text14 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__end_of_I2C_MasterStop 8A2 0 CODE 0 text49 dist/default/production\Tesis_Master_Rotacion.X.production.o
+_OSCCON 99 0 ABS 0 - dist/default/production\Tesis_Master_Rotacion.X.production.o
+__size_of_I2C_SetBuffer 0 0 ABS 0 - dist/default/production\Tesis_Master_Rotacion.X.production.o
+__size_of_I2C_MasterSendNack 0 0 ABS 0 - dist/default/production\Tesis_Master_Rotacion.X.production.o
+_I2C_MasterIsNack 7F2 0 CODE 0 text37 dist/default/production\Tesis_Master_Rotacion.X.production.o
+I2C_Open@address 73 0 COMMON 1 cstackCOMMON dist/default/production\Tesis_Master_Rotacion.X.production.o
+SetServo@ciclo 48 0 BANK0 1 cstackBANK0 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__end_of_SYSTEM_Initialize 6D4 0 CODE 0 text1 dist/default/production\Tesis_Master_Rotacion.X.production.o
+SetServo@slave 4B 0 BANK0 1 cstackBANK0 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__size_of_I2C_DO_IDLE 0 0 ABS 0 - dist/default/production\Tesis_Master_Rotacion.X.production.o
+__size_of_I2C_DO_RCEN 0 0 ABS 0 - dist/default/production\Tesis_Master_Rotacion.X.production.o
+I2C_SetBuffer@buffer 75 0 COMMON 1 cstackCOMMON dist/default/production\Tesis_Master_Rotacion.X.production.o
+__end_of_I2C_CallbackReturnStop 8CE 0 CODE 0 text44 dist/default/production\Tesis_Master_Rotacion.X.production.o
+clear_ram0 7CE 0 CODE 0 clrtext dist/default/production\Tesis_Master_Rotacion.X.production.o
+__pcstackBANK0 42 0 BANK0 1 cstackBANK0 dist/default/production\Tesis_Master_Rotacion.X.production.o
+_T1GCON 19 0 ABS 0 - dist/default/production\Tesis_Master_Rotacion.X.production.o
+I2C_SetDataCompleteCallback@cb 77 0 COMMON 1 cstackCOMMON dist/default/production\Tesis_Master_Rotacion.X.production.o
+_I2C_DO_SEND_RESTART 83A 0 CODE 0 text26 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__end_of_TMR1_SetInterruptHandler 7E6 0 CODE 0 text4 dist/default/production\Tesis_Master_Rotacion.X.production.o
+_WDTCON 97 0 ABS 0 - dist/default/production\Tesis_Master_Rotacion.X.production.o
+___int_sp 0 0 STACK 2 stack C:\Users\julio\AppData\Local\Temp\s684.o
+__end_of_I2C_SetBuffer 6F4 0 CODE 0 text48 dist/default/production\Tesis_Master_Rotacion.X.production.o
+_I2C_Write1ByteRegister 30E 0 CODE 0 text11 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__Hbank0 0 0 ABS 0 bank0 -
+__Hbank1 0 0 ABS 0 bank1 -
+__Hbank2 0 0 ABS 0 bank2 -
+__Hbank3 0 0 ABS 0 bank3 -
+__Hbank4 0 0 ABS 0 bank4 -
+__Hbank5 0 0 ABS 0 bank5 -
+__Hbank6 0 0 ABS 0 bank6 -
+__Hbank7 0 0 ABS 0 bank7 -
+__Hbank8 0 0 ABS 0 bank8 -
+__Hbank9 0 0 ABS 0 bank9 -
+__Hcinit 68 0 CODE 0 cinit -
+__size_of_OSCILLATOR_Initialize 0 0 ABS 0 - dist/default/production\Tesis_Master_Rotacion.X.production.o
+I2C_SetAddressNackCallback@ptr 79 0 COMMON 1 cstackCOMMON dist/default/production\Tesis_Master_Rotacion.X.production.o
+__Hsfr10 0 0 ABS 0 sfr10 -
+__Hsfr11 0 0 ABS 0 sfr11 -
+__Hsfr12 0 0 ABS 0 sfr12 -
+__Hsfr13 0 0 ABS 0 sfr13 -
+__Hsfr14 0 0 ABS 0 sfr14 -
+__Hsfr15 0 0 ABS 0 sfr15 -
+__Hsfr16 0 0 ABS 0 sfr16 -
+__Hsfr17 0 0 ABS 0 sfr17 -
+__Hsfr18 0 0 ABS 0 sfr18 -
+__Hsfr19 0 0 ABS 0 sfr19 -
+__Hsfr20 0 0 ABS 0 sfr20 -
+__Hsfr21 0 0 ABS 0 sfr21 -
+__Hsfr22 0 0 ABS 0 sfr22 -
+__Hsfr23 0 0 ABS 0 sfr23 -
+__Hsfr24 0 0 ABS 0 sfr24 -
+__Hsfr25 0 0 ABS 0 sfr25 -
+__Hsfr26 0 0 ABS 0 sfr26 -
+__Hsfr27 0 0 ABS 0 sfr27 -
+__Hsfr28 0 0 ABS 0 sfr28 -
+__Hsfr29 0 0 ABS 0 sfr29 -
+__Hsfr30 0 0 ABS 0 sfr30 -
+__Hsfr31 0 0 ABS 0 sfr31 -
+__end_of_wr1RegCompleteHandler 692 0 CODE 0 text45 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__Hstack 0 0 STACK 2 stack -
+__size_of_I2C_Initialize 0 0 ABS 0 - dist/default/production\Tesis_Master_Rotacion.X.production.o
+__Hbank10 0 0 ABS 0 bank10 -
+__Hbank11 0 0 ABS 0 bank11 -
+__Hbank12 0 0 ABS 0 bank12 -
+__Hbank13 0 0 BANK13 1 bank13 -
+__Hbank14 0 0 BANK14 1 bank14 -
+__Hbank15 0 0 BANK15 1 bank15 -
+__Hbank16 0 0 BANK16 1 bank16 -
+__Hbank17 0 0 BANK17 1 bank17 -
+__Hbank18 0 0 BANK18 1 bank18 -
+__Hbank19 0 0 BANK19 1 bank19 -
+__Hbank20 0 0 BANK20 1 bank20 -
+__Hbank21 0 0 BANK21 1 bank21 -
+__Hbank22 0 0 BANK22 1 bank22 -
+__Hbank23 0 0 BANK23 1 bank23 -
+__Hbank24 0 0 BANK24 1 bank24 -
+__Hbank25 0 0 BANK25 1 bank25 -
+__Hbank26 0 0 BANK26 1 bank26 -
+__Hbank27 0 0 BANK27 1 bank27 -
+__Hbank28 0 0 BANK28 1 bank28 -
+__Hbank29 0 0 BANK29 1 bank29 -
+__Hbank30 0 0 BANK30 1 bank30 -
+__Hbank31 0 0 BANK31 1 bank31 -
+_I2C_DO_SEND_RESTART_READ 84E 0 CODE 0 text28 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__Hbigram 0 0 ABS 0 bigram -
+__Hmaintext 0 0 ABS 0 maintext -
+_I2C_MasterSetIrq 88A 0 CODE 0 text36 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__Hcommon 0 0 ABS 0 common -
+__Hconfig 10012 0 CONFIG 4 config -
+__size_of_I2C_MasterDisableIrq 0 0 ABS 0 - dist/default/production\Tesis_Master_Rotacion.X.production.o
+__Lbank0 0 0 ABS 0 bank0 -
+__Lbank1 0 0 ABS 0 bank1 -
+__Lbank2 0 0 ABS 0 bank2 -
+__Lbank3 0 0 ABS 0 bank3 -
+__Lbank4 0 0 ABS 0 bank4 -
+__Lbank5 0 0 ABS 0 bank5 -
+__Lbank6 0 0 ABS 0 bank6 -
+__Lbank7 0 0 ABS 0 bank7 -
+__Lbank8 0 0 ABS 0 bank8 -
+__Lbank9 0 0 ABS 0 bank9 -
+__Lcinit 36 0 CODE 0 cinit -
+__Lsfr10 0 0 ABS 0 sfr10 -
+__Lsfr11 0 0 ABS 0 sfr11 -
+__Lsfr12 0 0 ABS 0 sfr12 -
+__Lsfr13 0 0 ABS 0 sfr13 -
+__Lsfr14 0 0 ABS 0 sfr14 -
+__Lsfr15 0 0 ABS 0 sfr15 -
+__Lsfr16 0 0 ABS 0 sfr16 -
+__Lsfr17 0 0 ABS 0 sfr17 -
+__Lsfr18 0 0 ABS 0 sfr18 -
+__Lsfr19 0 0 ABS 0 sfr19 -
+__Lsfr20 0 0 ABS 0 sfr20 -
+__Lsfr21 0 0 ABS 0 sfr21 -
+__Lsfr22 0 0 ABS 0 sfr22 -
+__Lsfr23 0 0 ABS 0 sfr23 -
+__Lsfr24 0 0 ABS 0 sfr24 -
+__Lsfr25 0 0 ABS 0 sfr25 -
+__Lsfr26 0 0 ABS 0 sfr26 -
+__Lsfr27 0 0 ABS 0 sfr27 -
+__Lsfr28 0 0 ABS 0 sfr28 -
+__Lsfr29 0 0 ABS 0 sfr29 -
+__Lsfr30 0 0 ABS 0 sfr30 -
+__Lsfr31 0 0 ABS 0 sfr31 -
+__Lstack 0 0 STACK 2 stack -
+_Rotar_Slave 68 0 CODE 0 text9 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__end_of_I2C_DO_SEND_RESTART_WRITE 84E 0 CODE 0 text27 dist/default/production\Tesis_Master_Rotacion.X.production.o
+_wr1RegCompleteHandler 66E 0 CODE 0 text45 dist/default/production\Tesis_Master_Rotacion.X.production.o
+_INTCONbits B 0 ABS 0 - dist/default/production\Tesis_Master_Rotacion.X.production.o
+__Habs1 0 0 ABS 0 abs1 -
+__Hcode 0 0 ABS 0 code -
+__Hinit 32 0 CODE 0 init -
+__Hsfr0 0 0 ABS 0 sfr0 -
+__Hsfr1 0 0 ABS 0 sfr1 -
+__Hsfr2 0 0 ABS 0 sfr2 -
+__Hsfr3 0 0 ABS 0 sfr3 -
+__Hsfr4 0 0 ABS 0 sfr4 -
+__Hsfr5 0 0 ABS 0 sfr5 -
+__Hsfr6 0 0 ABS 0 sfr6 -
+__Hsfr7 0 0 ABS 0 sfr7 -
+__Hsfr8 0 0 ABS 0 sfr8 -
+__Hsfr9 0 0 ABS 0 sfr9 -
+__Htext 0 0 ABS 0 text -
+__Labs1 0 0 ABS 0 abs1 -
+__Lcode 0 0 ABS 0 code -
+__Linit 32 0 CODE 0 init -
+__Lsfr0 0 0 ABS 0 sfr0 -
+__Lsfr1 0 0 ABS 0 sfr1 -
+__Lsfr2 0 0 ABS 0 sfr2 -
+__Lsfr3 0 0 ABS 0 sfr3 -
+__Lsfr4 0 0 ABS 0 sfr4 -
+__Lsfr5 0 0 ABS 0 sfr5 -
+__Lsfr6 0 0 ABS 0 sfr6 -
+__Lsfr7 0 0 ABS 0 sfr7 -
+__Lsfr8 0 0 ABS 0 sfr8 -
+__Lsfr9 0 0 ABS 0 sfr9 -
+__Ltext 0 0 ABS 0 text -
+__pstringtext1 4CC 0 STRCODE 0 stringtext1 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__pnvBANK0 52 0 BANK0 1 nvBANK0 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__end_of_I2C_SetAddressNackCallback 72C 0 CODE 0 text12 dist/default/production\Tesis_Master_Rotacion.X.production.o
+_I2C_Poller 746 0 CODE 0 text17 dist/default/production\Tesis_Master_Rotacion.X.production.o
+_SSP1CON1 215 0 ABS 0 - dist/default/production\Tesis_Master_Rotacion.X.production.o
+_SSP1CON2 216 0 ABS 0 - dist/default/production\Tesis_Master_Rotacion.X.production.o
+_SSP1STAT 214 0 ABS 0 - dist/default/production\Tesis_Master_Rotacion.X.production.o
+__end_of_I2C_MasterWaitForEvent 7F2 0 CODE 0 text18 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 -
+int$flags 7E 0 ABS 0 - dist/default/production\Tesis_Master_Rotacion.X.production.o
+__HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+__size_of_INTERRUPT_InterruptManager 0 0 ABS 0 - dist/default/production\Tesis_Master_Rotacion.X.production.o
+__end_of_I2C_MasterDisableIrq 8B4 0 CODE 0 text53 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__size_of_WDT_Initialize 0 0 ABS 0 - dist/default/production\Tesis_Master_Rotacion.X.production.o
+__size_of_Get_Master_TMR1_flag 0 0 ABS 0 - dist/default/production\Tesis_Master_Rotacion.X.production.o
+__S0 46B 0 ABS 0 - -
+__S1 7C 0 ABS 0 - -
+__S2 0 0 ABS 0 - -
+__size_of_TMR1_ISR 0 0 ABS 0 - dist/default/production\Tesis_Master_Rotacion.X.production.o
+_I2C_MasterSendTxData 862 0 CODE 0 text38 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__end_of_I2C_MasterGetRxData 896 0 CODE 0 text40 dist/default/production\Tesis_Master_Rotacion.X.production.o
+_I2C_DO_SEND_STOP 830 0 CODE 0 text25 dist/default/production\Tesis_Master_Rotacion.X.production.o
+I2C_SetBuffer@bufferSize 72 0 COMMON 1 cstackCOMMON dist/default/production\Tesis_Master_Rotacion.X.production.o
+_I2C_Status 20 0 BANK0 1 bssBANK0 dist/default/production\Tesis_Master_Rotacion.X.production.o
+_Clear_Master_TMR1_flag 8D2 0 CODE 0 text57 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__end_of_I2C_MasterIsNack 7FE 0 CODE 0 text37 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__size_of_I2C_MasterSendAck 0 0 ABS 0 - dist/default/production\Tesis_Master_Rotacion.X.production.o
+I2C_SetAddressNackCallback@cb 77 0 COMMON 1 cstackCOMMON dist/default/production\Tesis_Master_Rotacion.X.production.o
+__end_of_Get_Master_TMR1_flag 8D2 0 CODE 0 text56 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__size_of_I2C_MasterIsNack 0 0 ABS 0 - dist/default/production\Tesis_Master_Rotacion.X.production.o
+_SYSTEM_Initialize 6B4 0 CODE 0 text1 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__end_of_I2C_DO_RX_NACK_RESTART 81C 0 CODE 0 text22 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__HnvBANK0 0 0 ABS 0 nvBANK0 -
+__Lintentry 8 0 CODE 0 intentry -
+reset_vec 0 0 CODE 0 reset_vec C:\Users\julio\AppData\Local\Temp\s684.o
+_I2C_DO_RESET 808 0 CODE 0 text21 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__pdataBANK0 56 0 BANK0 1 dataBANK0 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__LbssBANK0 0 0 ABS 0 bssBANK0 -
+__end_of_I2C_DO_SEND_RESTART 844 0 CODE 0 text26 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__Lstringtext1 0 0 ABS 0 stringtext1 -
+__size_of_I2C_DO_SEND_ADR_WRITE 0 0 ABS 0 - dist/default/production\Tesis_Master_Rotacion.X.production.o
+_INTERRUPT_InterruptManager 8 0 CODE 0 intentry dist/default/production\Tesis_Master_Rotacion.X.production.o
+__size_of_I2C_MasterClearIrq 0 0 ABS 0 - dist/default/production\Tesis_Master_Rotacion.X.production.o
+I2C_Close@returnValue 73 0 COMMON 1 cstackCOMMON dist/default/production\Tesis_Master_Rotacion.X.production.o
+_PIE1bits 91 0 ABS 0 - dist/default/production\Tesis_Master_Rotacion.X.production.o
+__end_of_I2C_MasterSetIrq 890 0 CODE 0 text36 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__end_of_I2C_Poller 760 0 CODE 0 text17 dist/default/production\Tesis_Master_Rotacion.X.production.o
+_TMR1_ISR 618 0 CODE 0 text59 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__ptext10 6F4 0 CODE 0 text10 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__ptext11 30E 0 CODE 0 text11 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__ptext12 712 0 CODE 0 text12 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__ptext13 29A 0 CODE 0 text13 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__ptext14 72C 0 CODE 0 text14 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__ptext15 7FE 0 CODE 0 text15 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__ptext16 50C 0 CODE 0 text16 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__ptext17 746 0 CODE 0 text17 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__ptext18 7E6 0 CODE 0 text18 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__ptext19 42A 0 CODE 0 text19 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__ptext20 3D2 0 CODE 0 text20 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__ptext21 808 0 CODE 0 text21 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__ptext22 812 0 CODE 0 text22 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__ptext23 81C 0 CODE 0 text23 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__ptext24 826 0 CODE 0 text24 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__ptext25 830 0 CODE 0 text25 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__ptext26 83A 0 CODE 0 text26 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__ptext27 844 0 CODE 0 text27 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__ptext28 84E 0 CODE 0 text28 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__ptext29 7C0 0 CODE 0 text29 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__ptext30 20E 0 CODE 0 text30 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__ptext31 164 0 CODE 0 text31 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__ptext32 7B0 0 CODE 0 text32 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__ptext33 79E 0 CODE 0 text33 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__ptext34 858 0 CODE 0 text34 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__ptext35 374 0 CODE 0 text35 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__ptext36 88A 0 CODE 0 text36 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__ptext37 7F2 0 CODE 0 text37 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__ptext38 862 0 CODE 0 text38 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__ptext39 874 0 CODE 0 text39 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__ptext40 890 0 CODE 0 text40 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__ptext41 87C 0 CODE 0 text41 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__ptext42 896 0 CODE 0 text42 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__ptext43 8C6 0 CODE 0 text43 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__ptext44 8CA 0 CODE 0 text44 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__ptext45 66E 0 CODE 0 text45 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__ptext46 760 0 CODE 0 text46 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__ptext47 480 0 CODE 0 text47 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__ptext48 6D4 0 CODE 0 text48 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__ptext49 89C 0 CODE 0 text49 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__ptext50 8A2 0 CODE 0 text50 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__ptext51 8A8 0 CODE 0 text51 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__ptext52 584 0 CODE 0 text52 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__ptext53 8AE 0 CODE 0 text53 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__ptext54 8B4 0 CODE 0 text54 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__ptext55 8BA 0 CODE 0 text55 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__ptext56 8CE 0 CODE 0 text56 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__ptext57 8D2 0 CODE 0 text57 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__ptext59 618 0 CODE 0 text59 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__ptext60 692 0 CODE 0 text60 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__ptext61 8C0 0 CODE 0 text61 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__end_of_PIN_MANAGER_Initialize 66E 0 CODE 0 text5 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__Lbank10 0 0 ABS 0 bank10 -
+__Lbank11 0 0 ABS 0 bank11 -
+__Lbank12 0 0 ABS 0 bank12 -
+__Lbank13 0 0 BANK13 1 bank13 -
+__Lbank14 0 0 BANK14 1 bank14 -
+__Lbank15 0 0 BANK15 1 bank15 -
+__Lbank16 0 0 BANK16 1 bank16 -
+__Lbank17 0 0 BANK17 1 bank17 -
+__Lbank18 0 0 BANK18 1 bank18 -
+__Lbank19 0 0 BANK19 1 bank19 -
+__Lbank20 0 0 BANK20 1 bank20 -
+__Lbank21 0 0 BANK21 1 bank21 -
+__Lbank22 0 0 BANK22 1 bank22 -
+__Lbank23 0 0 BANK23 1 bank23 -
+__Lbank24 0 0 BANK24 1 bank24 -
+__Lbank25 0 0 BANK25 1 bank25 -
+__Lbank26 0 0 BANK26 1 bank26 -
+__Lbank27 0 0 BANK27 1 bank27 -
+__Lbank28 0 0 BANK28 1 bank28 -
+__Lbank29 0 0 BANK29 1 bank29 -
+__Lbank30 0 0 BANK30 1 bank30 -
+__Lbank31 0 0 BANK31 1 bank31 -
+__pmaintext 5EC 0 CODE 0 maintext dist/default/production\Tesis_Master_Rotacion.X.production.o
+__size_of_I2C_MasterSetIrq 0 0 ABS 0 - dist/default/production\Tesis_Master_Rotacion.X.production.o
+__Lbigram 0 0 ABS 0 bigram -
+__size_of_I2C_DO_SEND_RESTART_WRITE 0 0 ABS 0 - dist/default/production\Tesis_Master_Rotacion.X.production.o
+__Lcommon 0 0 ABS 0 common -
+__Lconfig 0 0 CONFIG 4 config -
+__end_of_TMR1_ISR 644 0 CODE 0 text59 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__size_of_I2C_DO_SEND_RESTART_READ 0 0 ABS 0 - dist/default/production\Tesis_Master_Rotacion.X.production.o
+__size_of_I2C_MasterStartRx 0 0 ABS 0 - dist/default/production\Tesis_Master_Rotacion.X.production.o
+__size_of_I2C_DO_RX_NACK_STOP 0 0 ABS 0 - dist/default/production\Tesis_Master_Rotacion.X.production.o
+__size_of_I2C_DO_RESET 0 0 ABS 0 - dist/default/production\Tesis_Master_Rotacion.X.production.o
+__size_of_I2C_CallbackReturnStop 0 0 ABS 0 - dist/default/production\Tesis_Master_Rotacion.X.production.o
+__end_of_I2C_DO_SEND_STOP 83A 0 CODE 0 text25 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__size_of_I2C_SetDataCompleteCallback 0 0 ABS 0 - dist/default/production\Tesis_Master_Rotacion.X.production.o
+__end_of_I2C_MasterClose 8BA 0 CODE 0 text54 dist/default/production\Tesis_Master_Rotacion.X.production.o
+_I2C_DO_IDLE 858 0 CODE 0 text34 dist/default/production\Tesis_Master_Rotacion.X.production.o
+_I2C_DO_RCEN 7C0 0 CODE 0 text29 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__end_of_I2C_MasterStart 8AE 0 CODE 0 text51 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__end_of_I2C_MasterWrite 808 0 CODE 0 text15 dist/default/production\Tesis_Master_Rotacion.X.production.o
+_OSCTUNE 98 0 ABS 0 - dist/default/production\Tesis_Master_Rotacion.X.production.o
+_I2C_CallbackReturnReset 8C6 0 CODE 0 text43 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__size_of_I2C_DO_SEND_STOP 0 0 ABS 0 - dist/default/production\Tesis_Master_Rotacion.X.production.o
+__end_of_I2C_CallbackReturnReset 8CA 0 CODE 0 text43 dist/default/production\Tesis_Master_Rotacion.X.production.o
+_I2C_DO_SEND_ADR_READ 79E 0 CODE 0 text33 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_2 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__Lspace_4 0 0 ABS 0 - -
+__pbssCOMMON 7B 0 COMMON 1 bssCOMMON dist/default/production\Tesis_Master_Rotacion.X.production.o
+__end_of_I2C_Write1ByteRegister 374 0 CODE 0 text11 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 -
+_PIR1bits 11 0 ABS 0 - dist/default/production\Tesis_Master_Rotacion.X.production.o
+__Lend_init 32 0 CODE 0 end_init -
+__LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+end_of_initialization 60 0 CODE 0 cinit dist/default/production\Tesis_Master_Rotacion.X.production.o
+__end_of_I2C_DO_RESET 812 0 CODE 0 text21 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__Hintentry 32 0 CODE 0 intentry -
+__end_of_I2C_SetDataCompleteCallback 77A 0 CODE 0 text46 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__size_of_I2C_SetAddressNackCallback 0 0 ABS 0 - dist/default/production\Tesis_Master_Rotacion.X.production.o
+__Lstrings 0 0 ABS 0 strings -
+__end_of_I2C_MasterSendAck 87C 0 CODE 0 text39 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__Hreset_vec 4 0 CODE 0 reset_vec -
+TMR1_SetInterruptHandler@InterruptHandler 72 0 COMMON 1 cstackCOMMON dist/default/production\Tesis_Master_Rotacion.X.production.o
+__size_of_I2C_MasterOperation 0 0 ABS 0 - dist/default/production\Tesis_Master_Rotacion.X.production.o
+__size_of_I2C_MasterOpen 0 0 ABS 0 - dist/default/production\Tesis_Master_Rotacion.X.production.o
+__size_of_I2C_MasterStop 0 0 ABS 0 - dist/default/production\Tesis_Master_Rotacion.X.production.o
+__HbssBANK0 0 0 ABS 0 bssBANK0 -
+_I2C_DO_RX_NACK_STOP 81C 0 CODE 0 text23 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__ptext1 6B4 0 CODE 0 text1 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__ptext2 86C 0 CODE 0 text2 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__ptext3 5BC 0 CODE 0 text3 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__ptext4 7DA 0 CODE 0 text4 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__ptext5 644 0 CODE 0 text5 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__ptext6 77A 0 CODE 0 text6 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__ptext7 78C 0 CODE 0 text7 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__ptext8 54A 0 CODE 0 text8 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__ptext9 68 0 CODE 0 text9 dist/default/production\Tesis_Master_Rotacion.X.production.o
+_I2C_MasterEnableRestart 8A2 0 CODE 0 text50 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__size_of_I2C_MasterWaitForEvent 0 0 ABS 0 - dist/default/production\Tesis_Master_Rotacion.X.production.o
+__end_of_I2C_MasterEnableRestart 8A8 0 CODE 0 text50 dist/default/production\Tesis_Master_Rotacion.X.production.o
+_I2C_MasterClose 8B4 0 CODE 0 text54 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__Lpowerup 0 0 CODE 0 powerup -
+__Leeprom_data 0 0 EEDATA 3 eeprom_data -
+_I2C_MasterStart 8A8 0 CODE 0 text51 dist/default/production\Tesis_Master_Rotacion.X.production.o
+_I2C_MasterWrite 7FE 0 CODE 0 text15 dist/default/production\Tesis_Master_Rotacion.X.production.o
+wr1RegCompleteHandler@ptr 42 0 BANK0 1 cstackBANK0 dist/default/production\Tesis_Master_Rotacion.X.production.o
+TMR1_WriteTimer@timerVal 70 0 COMMON 1 cstackCOMMON dist/default/production\Tesis_Master_Rotacion.X.production.o
+__end_of_Clear_Master_TMR1_flag 8D6 0 CODE 0 text57 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__end_of_TMR1_Initialize 5EC 0 CODE 0 text3 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__end_of_TMR1_WriteTimer 6B4 0 CODE 0 text60 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__Lreset_vec 0 0 CODE 0 reset_vec -
+_I2C_DO_RX_ACK 826 0 CODE 0 text24 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__Hstringtext1 0 0 ABS 0 stringtext1 -
+__end_of_I2C_DO_SEND_RESTART_READ 858 0 CODE 0 text28 dist/default/production\Tesis_Master_Rotacion.X.production.o
+_I2C_DO_SEND_RESTART_WRITE 844 0 CODE 0 text27 dist/default/production\Tesis_Master_Rotacion.X.production.o
+I2C_MasterOperation@returnValue 43 0 BANK0 1 cstackBANK0 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__end_of__initialization 60 0 CODE 0 cinit dist/default/production\Tesis_Master_Rotacion.X.production.o
+__Lfunctab 0 0 ENTRY 0 functab -
+_I2C_SetAddressNackCallback 712 0 CODE 0 text12 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__end_of_Rotar_Slave 164 0 CODE 0 text9 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__pidataBANK0 884 0 CODE 0 idataBANK0 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__size_of_I2C_DO_RX_NACK_RESTART 0 0 ABS 0 - dist/default/production\Tesis_Master_Rotacion.X.production.o
+_I2C_MasterFsm 42A 0 CODE 0 text19 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__end_of_I2C_SetCallback 4CC 0 CODE 0 text47 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__Lclrtext 0 0 ABS 0 clrtext -
+_SSP1CON1bits 215 0 ABS 0 - dist/default/production\Tesis_Master_Rotacion.X.production.o
+_SSP1CON2bits 216 0 ABS 0 - dist/default/production\Tesis_Master_Rotacion.X.production.o
+_I2C_Initialize 78C 0 CODE 0 text7 dist/default/production\Tesis_Master_Rotacion.X.production.o
+_I2C_MasterOperation 50C 0 CODE 0 text16 dist/default/production\Tesis_Master_Rotacion.X.production.o
+_timer1ReloadVal 54 0 BANK0 1 nvBANK0 dist/default/production\Tesis_Master_Rotacion.X.production.o
+_TMR1_Master_InterruptHandler 8C0 0 CODE 0 text61 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__size_of_wr1RegCompleteHandler 0 0 ABS 0 - dist/default/production\Tesis_Master_Rotacion.X.production.o
+__pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production\Tesis_Master_Rotacion.X.production.o
+__end_of_I2C_MasterStartRx 89C 0 CODE 0 text42 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__end_of_I2C_MasterSendNack 884 0 CODE 0 text41 dist/default/production\Tesis_Master_Rotacion.X.production.o
+_SSP1ADD 212 0 ABS 0 - dist/default/production\Tesis_Master_Rotacion.X.production.o
+_SSP1BUF 211 0 ABS 0 - dist/default/production\Tesis_Master_Rotacion.X.production.o
+__Hend_init 36 0 CODE 0 end_init -
+__end_of_main 618 0 CODE 0 maintext dist/default/production\Tesis_Master_Rotacion.X.production.o
+_I2C_MasterDisableIrq 8AE 0 CODE 0 text53 dist/default/production\Tesis_Master_Rotacion.X.production.o
+_estado_mov_nuevo 40 0 BANK0 1 bssBANK0 dist/default/production\Tesis_Master_Rotacion.X.production.o
+_estado_mov_viejo 41 0 BANK0 1 bssBANK0 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__size_of_I2C_Poller 0 0 ABS 0 - dist/default/production\Tesis_Master_Rotacion.X.production.o
+_T1CON 18 0 ABS 0 - dist/default/production\Tesis_Master_Rotacion.X.production.o
+_TMR1H 17 0 ABS 0 - dist/default/production\Tesis_Master_Rotacion.X.production.o
+_TMR1L 16 0 ABS 0 - dist/default/production\Tesis_Master_Rotacion.X.production.o
+_TRISA 8C 0 ABS 0 - dist/default/production\Tesis_Master_Rotacion.X.production.o
+_TRISC 8E 0 ABS 0 - dist/default/production\Tesis_Master_Rotacion.X.production.o
+__Hram 0 0 ABS 0 ram -
+__Lram 0 0 ABS 0 ram -
+_TMR1_Initialize 5BC 0 CODE 0 text3 dist/default/production\Tesis_Master_Rotacion.X.production.o
+_ciclo 3F 0 BANK0 1 bssBANK0 dist/default/production\Tesis_Master_Rotacion.X.production.o
+_TMR1_WriteTimer 692 0 CODE 0 text60 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__size_of_PIN_MANAGER_Initialize 0 0 ABS 0 - dist/default/production\Tesis_Master_Rotacion.X.production.o
+_WDT_Initialize 86C 0 CODE 0 text2 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__pintentry 8 0 CODE 0 intentry dist/default/production\Tesis_Master_Rotacion.X.production.o
+_I2C_MasterSendAck 874 0 CODE 0 text39 dist/default/production\Tesis_Master_Rotacion.X.production.o
+I2C_Write1ByteRegister@reg 44 0 BANK0 1 cstackBANK0 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__HdataBANK0 0 0 ABS 0 dataBANK0 -
+__end_of_OSCILLATOR_Initialize 78C 0 CODE 0 text6 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__initialization 36 0 CODE 0 cinit dist/default/production\Tesis_Master_Rotacion.X.production.o
+_Get_Master_TMR1_flag 8CE 0 CODE 0 text56 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__pbssBANK0 20 0 BANK0 1 bssBANK0 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__size_of_I2C_DO_ADDRESS_NACK 0 0 ABS 0 - dist/default/production\Tesis_Master_Rotacion.X.production.o
+__end_of_I2C_DO_RX_NACK_STOP 826 0 CODE 0 text23 dist/default/production\Tesis_Master_Rotacion.X.production.o
+_I2C_MasterSendNack 87C 0 CODE 0 text41 dist/default/production\Tesis_Master_Rotacion.X.production.o
+_I2C_SetCallback 480 0 CODE 0 text47 dist/default/production\Tesis_Master_Rotacion.X.production.o
+_TMR1_SetInterruptHandler 7DA 0 CODE 0 text4 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__end_of_I2C_Initialize 79E 0 CODE 0 text7 dist/default/production\Tesis_Master_Rotacion.X.production.o
+I2C_Write1ByteRegister@data 45 0 BANK0 1 cstackBANK0 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__size_of_I2C_MasterClose 0 0 ABS 0 - dist/default/production\Tesis_Master_Rotacion.X.production.o
+__size_of_I2C_MasterStart 0 0 ABS 0 - dist/default/production\Tesis_Master_Rotacion.X.production.o
+__size_of_I2C_MasterWrite 0 0 ABS 0 - dist/default/production\Tesis_Master_Rotacion.X.production.o
+I2C_Write1ByteRegister@address 47 0 BANK0 1 cstackBANK0 dist/default/production\Tesis_Master_Rotacion.X.production.o
+__end_of_I2C_DO_TX_EMPTY 3D2 0 CODE 0 text35 dist/default/production\Tesis_Master_Rotacion.X.production.o
+_TMR1_InterruptHandler 52 0 BANK0 1 nvBANK0 dist/default/production\Tesis_Master_Rotacion.X.production.o
+_OSCILLATOR_Initialize 77A 0 CODE 0 text6 dist/default/production\Tesis_Master_Rotacion.X.production.o
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+- 1 7E 2
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+text16 0 286 50C 1E5 2
+cstackCOMMON 1 70 70 C 1
+stringtext1 0 266 4CC 20 2
+intentry 0 4 8 262 2
+reset_vec 0 0 0 2 2
+bssBANK0 1 20 20 39 1
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES

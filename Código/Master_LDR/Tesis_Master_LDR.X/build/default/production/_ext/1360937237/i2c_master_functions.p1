@@ -1,0 +1,211 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"30 ../src/i2c_master.h
+[; ;../src/i2c_master.h: 30: estado_movimiento_t estado_mov_viejo = SENO, estado_mov_nuevo = SENO;
+[c E365 0 1 2 .. ]
+[n E365 . SENO COSENO QUIETO  ]
+[v F406 `(v ~T0 @X0 0 tf ]
+"17 ../src/i2c_master_functions.c
+[; ;../src/i2c_master_functions.c: 17:     while(!I2C_Open(address));
+[c E353 0 1 2 .. ]
+[n E353 . I2C_NOERR I2C_BUSY I2C_FAIL  ]
+"58 ../src/i2c_master.h
+[; ;../src/i2c_master.h: 58: i2c_error_t I2C_Open(i2c_address_t address);
+[v _I2C_Open `(E353 ~T0 @X0 0 ef1`uc ]
+"18 ../src/i2c_master_functions.c
+[; ;../src/i2c_master_functions.c: 18:     I2C_SetDataCompleteCallback(rd1RegCompleteHandler,&returnValue);
+[c E358 1 2 3 4 5 .. ]
+[n E358 . I2C_STOP I2C_RESTART_READ I2C_RESTART_WRITE I2C_CONTINUE I2C_RESET_LINK  ]
+[v F392 `(E358 ~T0 @X0 0 tf1`*v ]
+"109 ../src/i2c_master.h
+[; ;../src/i2c_master.h: 109: void I2C_SetDataCompleteCallback(i2c_callback_t cb, void *ptr);
+[v _I2C_SetDataCompleteCallback `(v ~T0 @X0 0 ef2`*F392`*v ]
+"9 ../src/i2c_master_functions.c
+[; ;../src/i2c_master_functions.c: 9: static i2c_operations_t rd1RegCompleteHandler(void *ptr);
+[v _rd1RegCompleteHandler `(E358 ~T0 @X0 0 sf1`*v ]
+"97 ../src/i2c_master.h
+[; ;../src/i2c_master.h: 97: void I2C_SetBuffer(void *buffer, size_t bufferSize);
+[v _I2C_SetBuffer `(v ~T0 @X0 0 ef2`*v`ui ]
+[v F399 `(E358 ~T0 @X0 0 tf1`*v ]
+"119
+[; ;../src/i2c_master.h: 119: void I2C_SetAddressNackCallback(i2c_callback_t cb, void *ptr);
+[v _I2C_SetAddressNackCallback `(v ~T0 @X0 0 ef2`*F399`*v ]
+[v F432 `(E358 ~T0 @X0 0 tf1`*v ]
+"87
+[; ;../src/i2c_master.h: 87: i2c_error_t I2C_MasterWrite(void);
+[v _I2C_MasterWrite `(E353 ~T0 @X0 0 ef ]
+"70
+[; ;../src/i2c_master.h: 70: i2c_error_t I2C_Close(void);
+[v _I2C_Close `(E353 ~T0 @X0 0 ef ]
+"10 ../src/i2c_master_functions.c
+[; ;../src/i2c_master_functions.c: 10: static i2c_operations_t wr1RegCompleteHandler(void *ptr);
+[v _wr1RegCompleteHandler `(E358 ~T0 @X0 0 sf1`*v ]
+[v F440 `(E358 ~T0 @X0 0 tf1`*v ]
+[v F444 `(E358 ~T0 @X0 0 tf1`*v ]
+[v F448 `(E358 ~T0 @X0 0 tf1`*v ]
+"30 ../src/i2c_master.h
+[; ;../src/i2c_master.h: 30: estado_movimiento_t estado_mov_viejo = SENO, estado_mov_nuevo = SENO;
+[v _estado_mov_viejo `E365 ~T0 @X0 1 e ]
+[i _estado_mov_viejo
+. `E365 0
+]
+[v _estado_mov_nuevo `E365 ~T0 @X0 1 e ]
+[i _estado_mov_nuevo
+. `E365 0
+]
+"32
+[; ;../src/i2c_master.h: 32: uint8_t ciclo;
+[v _ciclo `uc ~T0 @X0 1 e ]
+"129
+[; ;../src/i2c_master.h: 129: void (*MSSP_InterruptHandler)(void);
+[v _MSSP_InterruptHandler `*F406 ~T0 @X0 1 e ]
+"13 ../src/i2c_master_functions.c
+[; ;../src/i2c_master_functions.c: 13: uint8_t I2C_Read1ByteRegister(i2c_address_t address, uint8_t reg)
+[v _I2C_Read1ByteRegister `(uc ~T0 @X0 1 ef2`uc`uc ]
+"14
+[; ;../src/i2c_master_functions.c: 14: {
+{
+[e :U _I2C_Read1ByteRegister ]
+"13
+[; ;../src/i2c_master_functions.c: 13: uint8_t I2C_Read1ByteRegister(i2c_address_t address, uint8_t reg)
+[v _address `uc ~T0 @X0 1 r1 ]
+[v _reg `uc ~T0 @X0 1 r2 ]
+"14
+[; ;../src/i2c_master_functions.c: 14: {
+[f ]
+"15
+[; ;../src/i2c_master_functions.c: 15:     uint8_t returnValue = 0x00;
+[v _returnValue `uc ~T0 @X0 1 a ]
+[e = _returnValue -> -> 0 `i `uc ]
+"17
+[; ;../src/i2c_master_functions.c: 17:     while(!I2C_Open(address));
+[e $U 5  ]
+[e :U 6 ]
+[e :U 5 ]
+[e $ ! != -> ( _I2C_Open (1 _address `ui -> -> 0 `i `ui 6  ]
+[e :U 7 ]
+"18
+[; ;../src/i2c_master_functions.c: 18:     I2C_SetDataCompleteCallback(rd1RegCompleteHandler,&returnValue);
+[e ( _I2C_SetDataCompleteCallback (2 , &U _rd1RegCompleteHandler -> &U _returnValue `*v ]
+"19
+[; ;../src/i2c_master_functions.c: 19:     I2C_SetBuffer(&reg,1);
+[e ( _I2C_SetBuffer (2 , -> &U _reg `*v -> -> 1 `i `ui ]
+"20
+[; ;../src/i2c_master_functions.c: 20:     I2C_SetAddressNackCallback(((void*)0),((void*)0));
+[e ( _I2C_SetAddressNackCallback (2 , -> -> -> 0 `i `*v `*F432 -> -> 0 `i `*v ]
+"21
+[; ;../src/i2c_master_functions.c: 21:     I2C_MasterWrite();
+[e ( _I2C_MasterWrite ..  ]
+"22
+[; ;../src/i2c_master_functions.c: 22:     while(I2C_BUSY == I2C_Close());
+[e $U 8  ]
+[e :U 9 ]
+[e :U 8 ]
+[e $ == -> . `E353 1 `ui -> ( _I2C_Close ..  `ui 9  ]
+[e :U 10 ]
+"24
+[; ;../src/i2c_master_functions.c: 24:     return returnValue;
+[e ) _returnValue ]
+[e $UE 4  ]
+"25
+[; ;../src/i2c_master_functions.c: 25: }
+[e :UE 4 ]
+}
+"27
+[; ;../src/i2c_master_functions.c: 27: void I2C_Write1ByteRegister(i2c_address_t address, uint8_t reg, uint8_t data)
+[v _I2C_Write1ByteRegister `(v ~T0 @X0 1 ef3`uc`uc`uc ]
+"28
+[; ;../src/i2c_master_functions.c: 28: {
+{
+[e :U _I2C_Write1ByteRegister ]
+"27
+[; ;../src/i2c_master_functions.c: 27: void I2C_Write1ByteRegister(i2c_address_t address, uint8_t reg, uint8_t data)
+[v _address `uc ~T0 @X0 1 r1 ]
+[v _reg `uc ~T0 @X0 1 r2 ]
+[v _data `uc ~T0 @X0 1 r3 ]
+"28
+[; ;../src/i2c_master_functions.c: 28: {
+[f ]
+"29
+[; ;../src/i2c_master_functions.c: 29:     while(!I2C_Open(address));
+[e $U 12  ]
+[e :U 13 ]
+[e :U 12 ]
+[e $ ! != -> ( _I2C_Open (1 _address `ui -> -> 0 `i `ui 13  ]
+[e :U 14 ]
+"30
+[; ;../src/i2c_master_functions.c: 30:     I2C_SetDataCompleteCallback(wr1RegCompleteHandler,&data);
+[e ( _I2C_SetDataCompleteCallback (2 , &U _wr1RegCompleteHandler -> &U _data `*v ]
+"31
+[; ;../src/i2c_master_functions.c: 31:     I2C_SetBuffer(&reg,1);
+[e ( _I2C_SetBuffer (2 , -> &U _reg `*v -> -> 1 `i `ui ]
+"32
+[; ;../src/i2c_master_functions.c: 32:     I2C_SetAddressNackCallback(((void*)0),((void*)0));
+[e ( _I2C_SetAddressNackCallback (2 , -> -> -> 0 `i `*v `*F440 -> -> 0 `i `*v ]
+"33
+[; ;../src/i2c_master_functions.c: 33:     I2C_MasterWrite();
+[e ( _I2C_MasterWrite ..  ]
+"34
+[; ;../src/i2c_master_functions.c: 34:     while(I2C_BUSY == I2C_Close());
+[e $U 15  ]
+[e :U 16 ]
+[e :U 15 ]
+[e $ == -> . `E353 1 `ui -> ( _I2C_Close ..  `ui 16  ]
+[e :U 17 ]
+"35
+[; ;../src/i2c_master_functions.c: 35: }
+[e :UE 11 ]
+}
+"37
+[; ;../src/i2c_master_functions.c: 37: static i2c_operations_t rd1RegCompleteHandler(void *ptr)
+[v _rd1RegCompleteHandler `(E358 ~T0 @X0 1 sf1`*v ]
+"38
+[; ;../src/i2c_master_functions.c: 38: {
+{
+[e :U _rd1RegCompleteHandler ]
+"37
+[; ;../src/i2c_master_functions.c: 37: static i2c_operations_t rd1RegCompleteHandler(void *ptr)
+[v _ptr `*v ~T0 @X0 1 r1 ]
+"38
+[; ;../src/i2c_master_functions.c: 38: {
+[f ]
+"39
+[; ;../src/i2c_master_functions.c: 39:     I2C_SetBuffer(ptr,1);
+[e ( _I2C_SetBuffer (2 , _ptr -> -> 1 `i `ui ]
+"40
+[; ;../src/i2c_master_functions.c: 40:     I2C_SetDataCompleteCallback(((void*)0),((void*)0));
+[e ( _I2C_SetDataCompleteCallback (2 , -> -> -> 0 `i `*v `*F444 -> -> 0 `i `*v ]
+"41
+[; ;../src/i2c_master_functions.c: 41:     return I2C_RESTART_READ;
+[e ) . `E358 1 ]
+[e $UE 18  ]
+"42
+[; ;../src/i2c_master_functions.c: 42: }
+[e :UE 18 ]
+}
+"44
+[; ;../src/i2c_master_functions.c: 44: static i2c_operations_t wr1RegCompleteHandler(void *ptr)
+[v _wr1RegCompleteHandler `(E358 ~T0 @X0 1 sf1`*v ]
+"45
+[; ;../src/i2c_master_functions.c: 45: {
+{
+[e :U _wr1RegCompleteHandler ]
+"44
+[; ;../src/i2c_master_functions.c: 44: static i2c_operations_t wr1RegCompleteHandler(void *ptr)
+[v _ptr `*v ~T0 @X0 1 r1 ]
+"45
+[; ;../src/i2c_master_functions.c: 45: {
+[f ]
+"46
+[; ;../src/i2c_master_functions.c: 46:     I2C_SetBuffer(ptr,1);
+[e ( _I2C_SetBuffer (2 , _ptr -> -> 1 `i `ui ]
+"47
+[; ;../src/i2c_master_functions.c: 47:     I2C_SetDataCompleteCallback(((void*)0),((void*)0));
+[e ( _I2C_SetDataCompleteCallback (2 , -> -> -> 0 `i `*v `*F448 -> -> 0 `i `*v ]
+"48
+[; ;../src/i2c_master_functions.c: 48:     return I2C_CONTINUE;
+[e ) . `E358 3 ]
+[e $UE 19  ]
+"49
+[; ;../src/i2c_master_functions.c: 49: }
+[e :UE 19 ]
+}

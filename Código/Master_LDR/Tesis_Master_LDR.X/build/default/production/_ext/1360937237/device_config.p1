@@ -1,0 +1,38 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"2 ../src/device_config.c
+[p x FOSC = INTOSC ]
+"3
+[p x WDTE = OFF ]
+"4
+[p x PWRTE = OFF ]
+"5
+[p x MCLRE = ON ]
+"6
+[p x CP = OFF ]
+"7
+[p x BOREN = ON ]
+"8
+[p x CLKOUTEN = OFF ]
+"9
+[p x IESO = ON ]
+"10
+[p x FCMEN = ON ]
+"13
+[p x WRT = OFF ]
+"14
+[p x CPUDIV = NOCLKDIV ]
+"15
+[p x USBLSCLK = 48MHz ]
+"16
+[p x PLLMULT = 4x ]
+"17
+[p x PLLEN = DISABLED ]
+"18
+[p x STVREN = ON ]
+"19
+[p x BORV = LO ]
+"20
+[p x LPBOR = OFF ]
+"21
+[; ;../src/device_config.c: 21: 
+[p x LVP = ON ]

@@ -1,0 +1,15 @@
+﻿"Symbol";"Value";"Unit";
+"SUPPLIER_NAME";"RS Components";"";
+"TraceParts.PartVersion";"1.0.5";"";
+"SUPPLIER";"Phoenix Contact";"";
+"TraceParts.PartStatus";"Published";"";
+"TraceParts.PartNumber";"10-25072014-101821";"";
+"TraceParts.PartLanguage";"es";"";
+"DESIGN";"Regletas de terminales PCB, paso5mm 2 Contacto Macho Recta Bloque de terminales PCB, montaje: Orificio Pasante,";"";
+"TraceParts.InstanceId";"10-25072014-1018214DGGIM8T4IFP09V0UQJJ8457P";"";
+"TraceParts.PartTitle";"Regletas de terminales PCB, paso5mm 2 Contacto Macho Recta Bloque de terminales PCB, montaje: Orificio Pasante,";"";
+"REFERENCE";"1869062";"";
+"Buy_Now";"https://uk.rs-online.com/web/p/products/8044944?cm_mmc=en-ds-_-mcad-_-traceparts-_-8044944'";"";
+"TRACEPARTS";"TRACEPARTS";"";
+"TraceParts.PartStatusId";"";"";
+"TraceParts.ClassPath";"RS_COMPONENTS:10-25072014-101821";"";

@@ -1,0 +1,737 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F1455 ]
+[d frameptr 6 ]
+"29 D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Slave/src/adc.c
+[e E2183 . `uc
+LDR_Left 3
+LDR_Right 6
+channel_Temp 29
+channel_DAC 30
+channel_FVR 31
+]
+"29 D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Slave/src/i2c_slave.c
+[e E2579 . `uc
+I2C_IDLE 0
+I2C_ADDR_TX 1
+I2C_ADDR_RX 2
+I2C_DATA_TX 3
+I2C_DATA_RX 4
+]
+"68 D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Slave/src/vertebra_slave.c
+[e E2523 . `uc
+LDR_Left 3
+LDR_Right 6
+channel_Temp 29
+channel_DAC 30
+channel_FVR 31
+]
+"7 D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Slave/src/adc.c
+[v _ADC_Initialize ADC_Initialize `(v  1 e 1 0 ]
+"29
+[v _ADC_GetConversion ADC_GetConversion `(us  1 e 2 0 ]
+"59 D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Slave/src/i2c_slave.c
+[v _I2C_Initialize I2C_Initialize `(v  1 e 1 0 ]
+"68
+[v _I2C_Open I2C_Open `(v  1 e 1 0 ]
+"83
+[v _I2C_Isr I2C_Isr `(v  1 s 1 I2C_Isr ]
+"142
+[v _I2C_SlaveSetIsrHandler I2C_SlaveSetIsrHandler `(v  1 e 1 0 ]
+"148
+[v _I2C_SlaveSetReadIntHandler I2C_SlaveSetReadIntHandler `(v  1 e 1 0 ]
+"152
+[v _I2C_SlaveRdCallBack I2C_SlaveRdCallBack `(v  1 s 1 I2C_SlaveRdCallBack ]
+"159
+[v _I2C_SlaveDefRdInterruptHandler I2C_SlaveDefRdInterruptHandler `(v  1 s 1 I2C_SlaveDefRdInterruptHandler ]
+"164
+[v _I2C_SlaveSetWriteIntHandler I2C_SlaveSetWriteIntHandler `(v  1 e 1 0 ]
+"168
+[v _I2C_SlaveWrCallBack I2C_SlaveWrCallBack `(v  1 s 1 I2C_SlaveWrCallBack ]
+"176
+[v _I2C_SlaveDefWrInterruptHandler I2C_SlaveDefWrInterruptHandler `(v  1 s 1 I2C_SlaveDefWrInterruptHandler ]
+"182
+[v _I2C_SlaveSetAddrIntHandler I2C_SlaveSetAddrIntHandler `(v  1 e 1 0 ]
+"186
+[v _I2C_SlaveAddrCallBack I2C_SlaveAddrCallBack `(v  1 s 1 I2C_SlaveAddrCallBack ]
+"193
+[v _I2C_SlaveDefAddrInterruptHandler I2C_SlaveDefAddrInterruptHandler `(v  1 s 1 I2C_SlaveDefAddrInterruptHandler ]
+"198
+[v _I2C_SlaveSetWrColIntHandler I2C_SlaveSetWrColIntHandler `(v  1 e 1 0 ]
+"202
+[v _I2C_SlaveDefWrColInterruptHandler I2C_SlaveDefWrColInterruptHandler `(v  1 s 1 I2C_SlaveDefWrColInterruptHandler ]
+"206
+[v _I2C_SlaveOpen I2C_SlaveOpen `T(a  1 s 1 I2C_SlaveOpen ]
+"220
+[v _I2C_SlaveSetSlaveAddr I2C_SlaveSetSlaveAddr `T(v  1 s 1 I2C_SlaveSetSlaveAddr ]
+"225
+[v _I2C_SlaveSetSlaveMask I2C_SlaveSetSlaveMask `T(v  1 s 1 I2C_SlaveSetSlaveMask ]
+"230
+[v _I2C_SlaveEnableIrq I2C_SlaveEnableIrq `T(v  1 s 1 I2C_SlaveEnableIrq ]
+"235
+[v _I2C_SlaveIsAddr I2C_SlaveIsAddr `T(a  1 s 1 I2C_SlaveIsAddr ]
+"240
+[v _I2C_SlaveIsRead I2C_SlaveIsRead `T(a  1 s 1 I2C_SlaveIsRead ]
+"245
+[v _I2C_SlaveClearIrq I2C_SlaveClearIrq `T(v  1 s 1 I2C_SlaveClearIrq ]
+"250
+[v _I2C_SlaveReleaseClock I2C_SlaveReleaseClock `T(v  1 s 1 I2C_SlaveReleaseClock ]
+"256
+[v _I2C_SlaveIsTxBufEmpty I2C_SlaveIsTxBufEmpty `T(a  1 s 1 I2C_SlaveIsTxBufEmpty ]
+"261
+[v _I2C_SlaveIsRxBufFull I2C_SlaveIsRxBufFull `T(a  1 s 1 I2C_SlaveIsRxBufFull ]
+"266
+[v _I2C_SlaveSendTxData I2C_SlaveSendTxData `T(v  1 s 1 I2C_SlaveSendTxData ]
+"271
+[v _I2C_SlaveGetRxData I2C_SlaveGetRxData `T(uc  1 s 1 I2C_SlaveGetRxData ]
+"276
+[v _Data_to_master Data_to_master `(v  1 e 1 0 ]
+"280
+[v _Get_Data_to_master Get_Data_to_master `(uc  1 e 1 0 ]
+"4 D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Slave/src/init.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+"18
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+"30
+[v _WDT_Initialize WDT_Initialize `(v  1 e 1 0 ]
+"4 D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Slave/src/interrupt_manager.c
+[v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `II(v  1 e 1 0 ]
+"13 D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Slave/src/main.c
+[v _main main `(v  1 e 1 0 ]
+"4 D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Slave/src/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+"5 D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Slave/src/pwm1.c
+[v _PWM1_Initialize PWM1_Initialize `(v  1 e 1 0 ]
+"18
+[v _PWM1_LoadDutyValue PWM1_LoadDutyValue `(v  1 e 1 0 ]
+"5 D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Slave/src/pwm2.c
+[v _PWM2_Initialize PWM2_Initialize `(v  1 e 1 0 ]
+"18
+[v _PWM2_LoadDutyValue PWM2_LoadDutyValue `(v  1 e 1 0 ]
+"8 D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Slave/src/tmr1.c
+[v _TMR1_Initialize TMR1_Initialize `(v  1 e 1 0 ]
+"36
+[v _TMR1_WriteTimer TMR1_WriteTimer `(v  1 e 1 0 ]
+"58
+[v _TMR1_ISR TMR1_ISR `(v  1 e 1 0 ]
+"72
+[v _TMR1_SetInterruptHandler TMR1_SetInterruptHandler `(v  1 e 1 0 ]
+"4 D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Slave/src/tmr2.c
+[v _TMR2_Initialize TMR2_Initialize `(v  1 e 1 0 ]
+"16 D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Slave/src/vertebra_slave.c
+[v _Datos_Initialize Datos_Initialize `(v  1 e 1 0 ]
+"25
+[v _TMR1_Slave_InterruptHandler TMR1_Slave_InterruptHandler `(v  1 e 1 0 ]
+"29
+[v _Get_TMR1_flag Get_TMR1_flag `(uc  1 e 1 0 ]
+"33
+[v _Clear_TMR1_flag Clear_TMR1_flag `(v  1 e 1 0 ]
+"36
+[v _I2C_reg_Slave_InterruptHandler I2C_reg_Slave_InterruptHandler `(v  1 e 1 0 ]
+"41
+[v _Get_I2C_reg_flag Get_I2C_reg_flag `(uc  1 e 1 0 ]
+"45
+[v _Get_I2C_reg Get_I2C_reg `(uc  1 e 1 0 ]
+"49
+[v _Clear_I2C_reg_flag Clear_I2C_reg_flag `(v  1 e 1 0 ]
+"52
+[v _I2C_data_slave_flag I2C_data_slave_flag `(v  1 e 1 0 ]
+"56
+[v _Get_I2C_data_flag Get_I2C_data_flag `(uc  1 e 1 0 ]
+"60
+[v _Clear_I2C_data_flag Clear_I2C_data_flag `(v  1 e 1 0 ]
+"65
+[v _Read_Ldr Read_Ldr `(v  1 e 1 0 ]
+"76
+[v _I2C_Read_Write I2C_Read_Write `(v  1 e 1 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"26 D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Slave/src/i2c_slave.c
+[v _i2cWrData i2cWrData `VEuc  1 e 1 0 ]
+"27
+[v _i2cRdData i2cRdData `VEuc  1 e 1 0 ]
+"28
+[v _i2cSlaveAddr i2cSlaveAddr `VEuc  1 e 1 0 ]
+"29
+[v _i2cSlaveState i2cSlaveState `VEE2579  1 s 1 i2cSlaveState ]
+"30
+[v _datoParaLeer datoParaLeer `VEuc  1 e 1 0 ]
+"31
+[v _RegParaEscribir RegParaEscribir `VEuc  1 e 1 0 ]
+"33
+[v _master_read_data master_read_data `uc  1 s 1 master_read_data ]
+"119 D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Slave/src/i2c_slave.h
+[v _MSSP_InterruptHandler MSSP_InterruptHandler `*.37(v  1 e 2 0 ]
+"120
+[v _I2C_SlaveRdInterruptHandler I2C_SlaveRdInterruptHandler `*.37(v  1 e 2 0 ]
+"121
+[v _I2C_SlaveWrInterruptHandler I2C_SlaveWrInterruptHandler `*.37(v  1 e 2 0 ]
+"122
+[v _I2C_SlaveAddrInterruptHandler I2C_SlaveAddrInterruptHandler `*.37(v  1 e 2 0 ]
+"124
+[v _I2C_SlaveWrColInterruptHandler I2C_SlaveWrColInterruptHandler `*.37(v  1 e 2 0 ]
+"5 D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Slave/src/tmr1.c
+[v _timer1ReloadVal timer1ReloadVal `VEus  1 e 2 0 ]
+"6
+[v _TMR1_InterruptHandler TMR1_InterruptHandler `*.37(v  1 e 2 0 ]
+"9 D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Slave/src/vertebra_slave.c
+[v _flag_tmr1 flag_tmr1 `uc  1 s 1 flag_tmr1 ]
+"10
+[v _flag_i2c_reg flag_i2c_reg `uc  1 s 1 flag_i2c_reg ]
+"11
+[v _flag_i2c_data flag_i2c_data `uc  1 s 1 flag_i2c_data ]
+"12
+[v _write_reg write_reg `uc  1 s 1 write_reg ]
+[s S903 . 5 `uc 1 dato1 1 0 `uc 1 dato2 1 1 `uc 1 dato3 1 2 `uc 1 dato4 1 3 `uc 1 ciclo 1 4 ]
+"14
+[v _d1 d1 `S903  1 s 5 d1 ]
+[s S504 . 1 `uc 1 IOCIF 1 0 :1:0 
+`uc 1 INTF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 IOCIE 1 0 :1:3 
+`uc 1 INTE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"374 C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f1455.h
+[s S513 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 T0IE 1 0 :1:5 
+]
+[u S518 . 1 `S504 1 . 1 0 `S513 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES518  1 e 1 @11 ]
+[s S318 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 SSP1IF 1 0 :1:3 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+`uc 1 ADIF 1 0 :1:6 
+`uc 1 TMR1GIF 1 0 :1:7 
+]
+"541
+[u S327 . 1 `S318 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES327  1 e 1 @17 ]
+[s S557 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 ACTIF 1 0 :1:1 
+`uc 1 USBIF 1 0 :1:2 
+`uc 1 BCL1IF 1 0 :1:3 
+`uc 1 . 1 0 :1:4 
+`uc 1 C1IF 1 0 :1:5 
+`uc 1 C2IF 1 0 :1:6 
+`uc 1 OSFIF 1 0 :1:7 
+]
+"598
+[u S566 . 1 `S557 1 . 1 0 ]
+[v _PIR2bits PIR2bits `VES566  1 e 1 @18 ]
+"660
+[v _TMR1L TMR1L `VEuc  1 e 1 @22 ]
+"680
+[v _TMR1H TMR1H `VEuc  1 e 1 @23 ]
+"700
+[v _T1CON T1CON `VEuc  1 e 1 @24 ]
+[s S832 . 1 `uc 1 TMR1ON 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 nT1SYNC 1 0 :1:2 
+`uc 1 T1OSCEN 1 0 :1:3 
+`uc 1 T1CKPS 1 0 :2:4 
+`uc 1 TMR1CS 1 0 :2:6 
+]
+"722
+[s S839 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 T1CKPS0 1 0 :1:4 
+`uc 1 T1CKPS1 1 0 :1:5 
+`uc 1 TMR1CS0 1 0 :1:6 
+`uc 1 TMR1CS1 1 0 :1:7 
+]
+[u S845 . 1 `S832 1 . 1 0 `S839 1 . 1 0 ]
+[v _T1CONbits T1CONbits `VES845  1 e 1 @24 ]
+"772
+[v _T1GCON T1GCON `VEuc  1 e 1 @25 ]
+"842
+[v _TMR2 TMR2 `VEuc  1 e 1 @26 ]
+"862
+[v _PR2 PR2 `VEuc  1 e 1 @27 ]
+"882
+[v _T2CON T2CON `VEuc  1 e 1 @28 ]
+"953
+[v _TRISA TRISA `VEuc  1 e 1 @140 ]
+"980
+[v _TRISC TRISC `VEuc  1 e 1 @142 ]
+[s S276 . 1 `uc 1 TMR1IE 1 0 :1:0 
+`uc 1 TMR2IE 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 SSP1IE 1 0 :1:3 
+`uc 1 TXIE 1 0 :1:4 
+`uc 1 RCIE 1 0 :1:5 
+`uc 1 ADIE 1 0 :1:6 
+`uc 1 TMR1GIE 1 0 :1:7 
+]
+"1047
+[u S285 . 1 `S276 1 . 1 0 ]
+[v _PIE1bits PIE1bits `VES285  1 e 1 @145 ]
+[s S536 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 ACTIE 1 0 :1:1 
+`uc 1 USBIE 1 0 :1:2 
+`uc 1 BCL1IE 1 0 :1:3 
+`uc 1 . 1 0 :1:4 
+`uc 1 C1IE 1 0 :1:5 
+`uc 1 C2IE 1 0 :1:6 
+`uc 1 OSFIE 1 0 :1:7 
+]
+"1104
+[u S545 . 1 `S536 1 . 1 0 ]
+[v _PIE2bits PIE2bits `VES545  1 e 1 @146 ]
+[s S717 . 1 `uc 1 PS 1 0 :3:0 
+`uc 1 PSA 1 0 :1:3 
+`uc 1 TMR0SE 1 0 :1:4 
+`uc 1 TMR0CS 1 0 :1:5 
+`uc 1 INTEDG 1 0 :1:6 
+`uc 1 nWPUEN 1 0 :1:7 
+]
+"1162
+[s S724 . 1 `uc 1 PS0 1 0 :1:0 
+`uc 1 PS1 1 0 :1:1 
+`uc 1 PS2 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 T0SE 1 0 :1:4 
+`uc 1 T0CS 1 0 :1:5 
+]
+[u S731 . 1 `S717 1 . 1 0 `S724 1 . 1 0 ]
+[v _OPTION_REGbits OPTION_REGbits `VES731  1 e 1 @149 ]
+"1279
+[v _WDTCON WDTCON `VEuc  1 e 1 @151 ]
+"1338
+[v _OSCTUNE OSCTUNE `VEuc  1 e 1 @152 ]
+"1402
+[v _OSCCON OSCCON `VEuc  1 e 1 @153 ]
+"1536
+[v _ADRESL ADRESL `VEuc  1 e 1 @155 ]
+"1556
+[v _ADRESH ADRESH `VEuc  1 e 1 @156 ]
+"1576
+[v _ADCON0 ADCON0 `VEuc  1 e 1 @157 ]
+[s S33 . 1 `uc 1 ADON 1 0 :1:0 
+`uc 1 GO_nDONE 1 0 :1:1 
+`uc 1 CHS 1 0 :5:2 
+]
+"1601
+[s S37 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 ADGO 1 0 :1:1 
+`uc 1 CHS0 1 0 :1:2 
+`uc 1 CHS1 1 0 :1:3 
+`uc 1 CHS2 1 0 :1:4 
+`uc 1 CHS3 1 0 :1:5 
+`uc 1 CHS4 1 0 :1:6 
+]
+[s S45 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO 1 0 :1:1 
+]
+[u S48 . 1 `S33 1 . 1 0 `S37 1 . 1 0 `S45 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES48  1 e 1 @157 ]
+"1656
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @158 ]
+"1722
+[v _ADCON2 ADCON2 `VEuc  1 e 1 @159 ]
+"1764
+[v _LATA LATA `VEuc  1 e 1 @268 ]
+"1791
+[v _LATC LATC `VEuc  1 e 1 @270 ]
+"2125
+[v _BORCON BORCON `VEuc  1 e 1 @278 ]
+"2341
+[v _APFCON APFCON `VEuc  1 e 1 @285 ]
+"2387
+[v _ANSELA ANSELA `VEuc  1 e 1 @396 ]
+"2416
+[v _ANSELC ANSELC `VEuc  1 e 1 @398 ]
+"2929
+[v _WPUA WPUA `VEuc  1 e 1 @524 ]
+"2970
+[v _SSP1BUF SSP1BUF `VEuc  1 e 1 @529 ]
+"3008
+[v _SSP1ADD SSP1ADD `VEuc  1 e 1 @530 ]
+"3046
+[v _SSP1MSK SSP1MSK `VEuc  1 e 1 @531 ]
+"3084
+[v _SSP1STAT SSP1STAT `VEuc  1 e 1 @532 ]
+[s S297 . 1 `uc 1 BF 1 0 :1:0 
+`uc 1 UA 1 0 :1:1 
+`uc 1 R_nW 1 0 :1:2 
+`uc 1 S 1 0 :1:3 
+`uc 1 P 1 0 :1:4 
+`uc 1 D_nA 1 0 :1:5 
+`uc 1 CKE 1 0 :1:6 
+`uc 1 SMP 1 0 :1:7 
+]
+"3106
+[u S306 . 1 `S297 1 . 1 0 ]
+[v _SSP1STATbits SSP1STATbits `VES306  1 e 1 @532 ]
+"3206
+[v _SSP1CON1 SSP1CON1 `VEuc  1 e 1 @533 ]
+[s S95 . 1 `uc 1 SSP1M0 1 0 :1:0 
+`uc 1 SSP1M1 1 0 :1:1 
+`uc 1 SSP1M2 1 0 :1:2 
+`uc 1 SSP1M3 1 0 :1:3 
+`uc 1 CKP 1 0 :1:4 
+`uc 1 SSPEN 1 0 :1:5 
+`uc 1 SSPOV 1 0 :1:6 
+`uc 1 WCOL 1 0 :1:7 
+]
+"3238
+[s S104 . 1 `uc 1 SSPM 1 0 :4:0 
+`uc 1 . 1 0 :1:4 
+`uc 1 SSP1EN 1 0 :1:5 
+`uc 1 SSP1OV 1 0 :1:6 
+]
+[u S109 . 1 `S95 1 . 1 0 `S104 1 . 1 0 ]
+[v _SSP1CON1bits SSP1CON1bits `VES109  1 e 1 @533 ]
+"3449
+[v _SSP1CON2 SSP1CON2 `VEuc  1 e 1 @534 ]
+"3928
+[v _ACTCON ACTCON `VEuc  1 e 1 @923 ]
+"3975
+[v _PWM1DCL PWM1DCL `VEuc  1 e 1 @1553 ]
+"4011
+[v _PWM1DCH PWM1DCH `VEuc  1 e 1 @1554 ]
+"4081
+[v _PWM1CON PWM1CON `VEuc  1 e 1 @1555 ]
+"4157
+[v _PWM2DCL PWM2DCL `VEuc  1 e 1 @1556 ]
+"4193
+[v _PWM2DCH PWM2DCH `VEuc  1 e 1 @1557 ]
+"4263
+[v _PWM2CON PWM2CON `VEuc  1 e 1 @1558 ]
+"13 D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Slave/src/main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"41
+} 0
+"4 D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Slave/src/init.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+{
+"16
+} 0
+"30
+[v _WDT_Initialize WDT_Initialize `(v  1 e 1 0 ]
+{
+"34
+} 0
+"4 D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Slave/src/tmr2.c
+[v _TMR2_Initialize TMR2_Initialize `(v  1 e 1 0 ]
+{
+"17
+} 0
+"8 D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Slave/src/tmr1.c
+[v _TMR1_Initialize TMR1_Initialize `(v  1 e 1 0 ]
+{
+"33
+} 0
+"72
+[v _TMR1_SetInterruptHandler TMR1_SetInterruptHandler `(v  1 e 1 0 ]
+{
+[v TMR1_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 4 ]
+"74
+} 0
+"5 D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Slave/src/pwm2.c
+[v _PWM2_Initialize PWM2_Initialize `(v  1 e 1 0 ]
+{
+"16
+} 0
+"5 D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Slave/src/pwm1.c
+[v _PWM1_Initialize PWM1_Initialize `(v  1 e 1 0 ]
+{
+"16
+} 0
+"4 D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Slave/src/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+{
+"24
+} 0
+"18 D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Slave/src/init.c
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+{
+"28
+} 0
+"59 D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Slave/src/i2c_slave.c
+[v _I2C_Initialize I2C_Initialize `(v  1 e 1 0 ]
+{
+"65
+} 0
+"16 D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Slave/src/vertebra_slave.c
+[v _Datos_Initialize Datos_Initialize `(v  1 e 1 0 ]
+{
+"23
+} 0
+"7 D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Slave/src/adc.c
+[v _ADC_Initialize ADC_Initialize `(v  1 e 1 0 ]
+{
+"25
+} 0
+"65 D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Slave/src/vertebra_slave.c
+[v _Read_Ldr Read_Ldr `(v  1 e 1 0 ]
+{
+"74
+} 0
+"29 D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Slave/src/adc.c
+[v _ADC_GetConversion ADC_GetConversion `(us  1 e 2 0 ]
+{
+[v ADC_GetConversion@channel channel `E2183  1 a 1 wreg ]
+[v ADC_GetConversion@channel channel `E2183  1 a 1 wreg ]
+"32
+[v ADC_GetConversion@channel channel `E2183  1 a 1 1 ]
+"50
+} 0
+"76 D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Slave/src/vertebra_slave.c
+[v _I2C_Read_Write I2C_Read_Write `(v  1 e 1 0 ]
+{
+[v I2C_Read_Write@data data `uc  1 a 1 wreg ]
+"77
+[v I2C_Read_Write@i2c_WrData i2c_WrData `uc  1 a 1 5 ]
+"76
+[v I2C_Read_Write@data data `uc  1 a 1 wreg ]
+"79
+[v I2C_Read_Write@data data `uc  1 a 1 4 ]
+"109
+} 0
+"18 D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Slave/src/pwm2.c
+[v _PWM2_LoadDutyValue PWM2_LoadDutyValue `(v  1 e 1 0 ]
+{
+[v PWM2_LoadDutyValue@dutyValue dutyValue `us  1 p 2 4 ]
+"25
+} 0
+"18 D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Slave/src/pwm1.c
+[v _PWM1_LoadDutyValue PWM1_LoadDutyValue `(v  1 e 1 0 ]
+{
+[v PWM1_LoadDutyValue@dutyValue dutyValue `us  1 p 2 4 ]
+"25
+} 0
+"52 D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Slave/src/vertebra_slave.c
+[v _I2C_data_slave_flag I2C_data_slave_flag `(v  1 e 1 0 ]
+{
+"54
+} 0
+"56
+[v _Get_I2C_data_flag Get_I2C_data_flag `(uc  1 e 1 0 ]
+{
+"58
+} 0
+"276 D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Slave/src/i2c_slave.c
+[v _Data_to_master Data_to_master `(v  1 e 1 0 ]
+{
+[v Data_to_master@i2c_wr_data i2c_wr_data `uc  1 a 1 wreg ]
+[v Data_to_master@i2c_wr_data i2c_wr_data `uc  1 a 1 wreg ]
+[v Data_to_master@i2c_wr_data i2c_wr_data `uc  1 a 1 5 ]
+"279
+} 0
+"60 D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Slave/src/vertebra_slave.c
+[v _Clear_I2C_data_flag Clear_I2C_data_flag `(v  1 e 1 0 ]
+{
+"62
+} 0
+"68 D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Slave/src/i2c_slave.c
+[v _I2C_Open I2C_Open `(v  1 e 1 0 ]
+{
+"80
+} 0
+"164
+[v _I2C_SlaveSetWriteIntHandler I2C_SlaveSetWriteIntHandler `(v  1 e 1 0 ]
+{
+[v I2C_SlaveSetWriteIntHandler@handler handler `*.37(v  1 p 2 4 ]
+"166
+} 0
+"198
+[v _I2C_SlaveSetWrColIntHandler I2C_SlaveSetWrColIntHandler `(v  1 e 1 0 ]
+{
+[v I2C_SlaveSetWrColIntHandler@handler handler `*.37(v  1 p 2 4 ]
+"200
+} 0
+"225
+[v _I2C_SlaveSetSlaveMask I2C_SlaveSetSlaveMask `T(v  1 s 1 I2C_SlaveSetSlaveMask ]
+{
+[v I2C_SlaveSetSlaveMask@maskAddr maskAddr `uc  1 a 1 wreg ]
+[v I2C_SlaveSetSlaveMask@maskAddr maskAddr `uc  1 a 1 wreg ]
+"227
+[v I2C_SlaveSetSlaveMask@maskAddr maskAddr `uc  1 a 1 4 ]
+"228
+} 0
+"220
+[v _I2C_SlaveSetSlaveAddr I2C_SlaveSetSlaveAddr `T(v  1 s 1 I2C_SlaveSetSlaveAddr ]
+{
+[v I2C_SlaveSetSlaveAddr@slaveAddr slaveAddr `uc  1 a 1 wreg ]
+[v I2C_SlaveSetSlaveAddr@slaveAddr slaveAddr `uc  1 a 1 wreg ]
+"222
+[v I2C_SlaveSetSlaveAddr@slaveAddr slaveAddr `uc  1 a 1 4 ]
+"223
+} 0
+"148
+[v _I2C_SlaveSetReadIntHandler I2C_SlaveSetReadIntHandler `(v  1 e 1 0 ]
+{
+[v I2C_SlaveSetReadIntHandler@handler handler `*.37(v  1 p 2 4 ]
+"150
+} 0
+"142
+[v _I2C_SlaveSetIsrHandler I2C_SlaveSetIsrHandler `(v  1 e 1 0 ]
+{
+[v I2C_SlaveSetIsrHandler@handler handler `*.37(v  1 p 2 4 ]
+"145
+} 0
+"182
+[v _I2C_SlaveSetAddrIntHandler I2C_SlaveSetAddrIntHandler `(v  1 e 1 0 ]
+{
+[v I2C_SlaveSetAddrIntHandler@handler handler `*.37(v  1 p 2 4 ]
+"184
+} 0
+"206
+[v _I2C_SlaveOpen I2C_SlaveOpen `T(a  1 s 1 I2C_SlaveOpen ]
+{
+"217
+} 0
+"230
+[v _I2C_SlaveEnableIrq I2C_SlaveEnableIrq `T(v  1 s 1 I2C_SlaveEnableIrq ]
+{
+"233
+} 0
+"29 D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Slave/src/vertebra_slave.c
+[v _Get_TMR1_flag Get_TMR1_flag `(uc  1 e 1 0 ]
+{
+"31
+} 0
+"41
+[v _Get_I2C_reg_flag Get_I2C_reg_flag `(uc  1 e 1 0 ]
+{
+"43
+} 0
+"45
+[v _Get_I2C_reg Get_I2C_reg `(uc  1 e 1 0 ]
+{
+"47
+} 0
+"33
+[v _Clear_TMR1_flag Clear_TMR1_flag `(v  1 e 1 0 ]
+{
+"35
+} 0
+"49
+[v _Clear_I2C_reg_flag Clear_I2C_reg_flag `(v  1 e 1 0 ]
+{
+"51
+} 0
+"4 D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Slave/src/interrupt_manager.c
+[v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `II(v  1 e 1 0 ]
+{
+"30
+} 0
+"58 D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Slave/src/tmr1.c
+[v _TMR1_ISR TMR1_ISR `(v  1 e 1 0 ]
+{
+"69
+} 0
+"36
+[v _TMR1_WriteTimer TMR1_WriteTimer `(v  1 e 1 0 ]
+{
+[v TMR1_WriteTimer@timerVal timerVal `us  1 p 2 0 ]
+"56
+} 0
+"25 D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Slave/src/vertebra_slave.c
+[v _TMR1_Slave_InterruptHandler TMR1_Slave_InterruptHandler `(v  1 e 1 0 ]
+{
+"27
+} 0
+"83 D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Slave/src/i2c_slave.c
+[v _I2C_Isr I2C_Isr `(v  1 s 1 I2C_Isr ]
+{
+"139
+} 0
+"36 D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Slave/src/vertebra_slave.c
+[v _I2C_reg_Slave_InterruptHandler I2C_reg_Slave_InterruptHandler `(v  1 e 1 0 ]
+{
+[v I2C_reg_Slave_InterruptHandler@reg reg `uc  1 a 1 wreg ]
+[v I2C_reg_Slave_InterruptHandler@reg reg `uc  1 a 1 wreg ]
+[v I2C_reg_Slave_InterruptHandler@reg reg `uc  1 a 1 1 ]
+"39
+} 0
+"168 D:\julio\Documents\Proyecto_Final\Tesis-github\Tesis-Anexos\C_elegans_Robot\Código\Slave/src/i2c_slave.c
+[v _I2C_SlaveWrCallBack I2C_SlaveWrCallBack `(v  1 s 1 I2C_SlaveWrCallBack ]
+{
+"174
+} 0
+"176
+[v _I2C_SlaveDefWrInterruptHandler I2C_SlaveDefWrInterruptHandler `(v  1 s 1 I2C_SlaveDefWrInterruptHandler ]
+{
+"179
+} 0
+"266
+[v _I2C_SlaveSendTxData I2C_SlaveSendTxData `T(v  1 s 1 I2C_SlaveSendTxData ]
+{
+[v I2C_SlaveSendTxData@data data `uc  1 a 1 wreg ]
+[v I2C_SlaveSendTxData@data data `uc  1 a 1 wreg ]
+"268
+[v I2C_SlaveSendTxData@data data `uc  1 a 1 0 ]
+"269
+} 0
+"280
+[v _Get_Data_to_master Get_Data_to_master `(uc  1 e 1 0 ]
+{
+"282
+} 0
+"250
+[v _I2C_SlaveReleaseClock I2C_SlaveReleaseClock `T(v  1 s 1 I2C_SlaveReleaseClock ]
+{
+"253
+} 0
+"152
+[v _I2C_SlaveRdCallBack I2C_SlaveRdCallBack `(v  1 s 1 I2C_SlaveRdCallBack ]
+{
+"157
+} 0
+"159
+[v _I2C_SlaveDefRdInterruptHandler I2C_SlaveDefRdInterruptHandler `(v  1 s 1 I2C_SlaveDefRdInterruptHandler ]
+{
+"161
+} 0
+"256
+[v _I2C_SlaveIsTxBufEmpty I2C_SlaveIsTxBufEmpty `T(a  1 s 1 I2C_SlaveIsTxBufEmpty ]
+{
+"259
+} 0
+"261
+[v _I2C_SlaveIsRxBufFull I2C_SlaveIsRxBufFull `T(a  1 s 1 I2C_SlaveIsRxBufFull ]
+{
+"264
+} 0
+"240
+[v _I2C_SlaveIsRead I2C_SlaveIsRead `T(a  1 s 1 I2C_SlaveIsRead ]
+{
+"243
+} 0
+"235
+[v _I2C_SlaveIsAddr I2C_SlaveIsAddr `T(a  1 s 1 I2C_SlaveIsAddr ]
+{
+"238
+} 0
+"245
+[v _I2C_SlaveClearIrq I2C_SlaveClearIrq `T(v  1 s 1 I2C_SlaveClearIrq ]
+{
+"248
+} 0
+"186
+[v _I2C_SlaveAddrCallBack I2C_SlaveAddrCallBack `(v  1 s 1 I2C_SlaveAddrCallBack ]
+{
+"191
+} 0
+"193
+[v _I2C_SlaveDefAddrInterruptHandler I2C_SlaveDefAddrInterruptHandler `(v  1 s 1 I2C_SlaveDefAddrInterruptHandler ]
+{
+"195
+} 0
+"271
+[v _I2C_SlaveGetRxData I2C_SlaveGetRxData `T(uc  1 s 1 I2C_SlaveGetRxData ]
+{
+"274
+} 0
